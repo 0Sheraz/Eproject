@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(3, 155, 201);
+}
+p{
+    margin-left: 40%;
+    padding-top: 10%; 
+}
+.img{
+    background-image: url( ../Images/2cfe6fb7141c317342212581ce85d385.jpg);
+    height: 500px;
+    background-repeat: no-repeat center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+.btn{
+        margin-left: 600px;
+        margin-top: 10%;
+}

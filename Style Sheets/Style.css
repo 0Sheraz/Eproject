@@ -18,6 +18,14 @@ p{
     overflow: hidden;
 }
 .btn{
-        margin-left: 600px;
-        margin-top: 10%;
+    margin-left: 600px;
+    margin-top: 10%;
+    border: 100px;
+    border-color: red;
+    background-color: transparent;   
+}
+.btn:hover{
+    color: brown;
+    background-color:  rgb(3, 155, 201);
+    padding-left: 10%;
 }

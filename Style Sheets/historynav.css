@@ -1,0 +1,29 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+ /* navbar items */
+ .navbar{
+    margin-top: 50px;
+ }
+.navbar-collapse{
+    background-color: blue;
+    border-radius: 20px;
+    line-height: 180%;
+   margin-left: 90px;
+   
+}
+.nav-link{
+    color: white;
+}
+/* navbar items end */
+
+/* search bar section css */
+.search-bar{
+   padding: 100px;
+   width: 50%;
+   margin-left: 15%;
+}
+/* search bar section css end */
+

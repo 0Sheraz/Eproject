@@ -7,6 +7,7 @@
 /* navbar items */
 .navbar {
     margin-top: 50px;
+    margin-right: -10px;
 }
 
 .navbar-collapse {
@@ -17,7 +18,7 @@
 
 }
 
-.nav-link {
+.navbar .nav-link {
     color: white;
 }
 
@@ -33,38 +34,27 @@
 /* search bar section css end */
 
 /* body-images */
-.row{
-    margin-left: 50px;
-    width: 30%;
-    overflow: hidden;
-}
-.row .container {
-   width: 100%;
-   overflow: hidden;
-  
+
+.container{
+    background-color: black;
 }
 
-.container .image-resize {
-    display: block;
-    padding: 5px;
+.container img {
     float: left;
-    width: 100%;
+    display: block;
+    width: 33.33%;
     transition: 2s;
     cursor: pointer;
 }
-.container::after{
-    content:"";
-    position: absolute;
-}
 
-.image-resize {
-    height: 350px;
-   
+.image-resize{
+    padding-left: 10px;
+    height: 380px;
 }
 
 .container:hover img {
-    transform: scale(1.3);
-    box-shadow: 0px 4px 6px 2px;
+    transform: scale(1.2);
+    box-shadow: 0, 4px, 6px, -2px;
     
 }
 
@@ -79,3 +69,24 @@
 @media screen {}
 
 /* body-images end */
+
+/* body-image new-design */
+.container1{
+    padding: 10px;
+    float: left;
+    margin-top: 20px;
+    margin-left: 11.5%;
+    height: 340px;
+    width: 50%;
+    background-color: black;
+    overflow: hidden;
+}
+
+.container1 img{
+    transition: 2s;
+    cursor: pointer;
+}
+.container1:hover img{
+    transform: scale(1.3);
+}
+/* body-image new-design-end */

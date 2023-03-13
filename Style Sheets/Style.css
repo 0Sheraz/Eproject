@@ -6,21 +6,25 @@
 body{
     background-color: rgb(3, 155, 201);
     height: 100vh;
+    /* position: relative;
+     */
 }
 .img{
-    background-image: url(../Images/img1.jpeg);
+    background-image: url(../andy-townsend-photos-052-2_5a6b6bebe86816d1bd1a03ada1af191b.webp);
     width: 100%;
-    height: 550px;
+    height: 600px;
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center; 
-    transition: 3000ms;  
+    background-size:cover; 
+    /* transition: 3000ms;   */
+    position: absolute;
+    margin-top: -60px;
+    z-index: -1 ;
 }
- 
-.img{
+    
+/* .img{
     background-image: url( ../Images/2cfe6fb7141c317342212581ce85d385.jpg);
      height: 500px;
      width: 100%;
      display: block;
-}
+} */
 

@@ -1,21 +1,15 @@
 .navbar{
-    background-color: rgb(0, 0, 0);
+    background-color: transparent I !important;
 }
-.navbar:scroll{
-        background-color: #fff;
 
-}
 .nav-item:hover{
-    background-color: rgb(241, 239, 237);
-    margin-bottom: 3px;
-    color: #080707;
-}
-.nav-item:hover{
-    background-color: rgb(219, 215, 209);
+    background-color: rgb(0, 0, 0);
     margin-bottom: 5px;
+    color: #fff;
 }
 .nav-link:hover{
-        color: rgb(0, 0, 0);
+        color: rgb(248, 244, 244);
+        color: #fff;
 }
  @media screen and (min-width: 993px){
     .dropdown:hover .dropdown-menu{
@@ -31,10 +25,23 @@
  .nav-item{
     transition: all 1000ms ease-in-out 0s;
     animation-duration: 1000ms;
-    color: #fff;
+    color: #050404;
  }
  .nav-link{
-    color: aliceblue;
+    color: rgb(0, 0, 0);
  }
+ .dropdown-menu{
+    background-color: transparent;
+    border: none;
+ }
+ .navbar-brand{
+    transition: 500ms;
+ }
+ .dropdown-item:hover{
+    background-color: #050404;
+    color: #fff;
+ }
+
+ 
  
   

@@ -6,17 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<!-- Bootstrap cdn's are placed up there  -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+ <!-- bootstrap css link -->
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+ integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<!-- bootstrap css link end -->
 <link rel="stylesheet" href="./Style Sheets/nav.css">
 <link rel="stylesheet" href="./Style Sheets/Style.css">
 <body>
-  
-    <!-- mr.sheraz's section  -->
+   <!-- bootstrap cdn links -->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+   integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+   crossorigin="anonymous"></script>
+ <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+   integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+   crossorigin="anonymous"></script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+   integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+   crossorigin="anonymous"></script>
+ <!-- bootstrap cdn links end -->
+
+
+
+  <!-- mr.sheraz's section  -->
     <header>
+      <!-- navbar starts -->
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container">
               <a class="navbar-brand" href="#">logo</a>
@@ -33,7 +46,7 @@
                   <a class="nav-link" href="#">About</a>
                 </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">History</a>
+                    <a class="nav-link" href="../Eproject/shop.html">History</a>
                   </li>
                   <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -59,43 +72,29 @@
               </div>
             </div>
           </nav>
-          <section class="Home">
-           <div class="slider">
-            <div class="slides1 active"> 
-                <div class="container">
-                <div class="caption">
-                  <h1>mountain and  climb with us</h1>
-                  <p>lorun ipsum text here.</p>
-                  <a href="#">Have a Tour now</a>
-                </div>
+          <!-- navbar ends  -->
+          
+          <div id="carouselExampleAutoplaying" class="slide" data-bs-ride="slide">
+            <div class="carousel-inner">
+              <div class="slide-item active">
+                <img src="./Images/andy-townsend-photos-052-2_5a6b6bebe86816d1bd1a03ada1af191b.webp" class="d-block w-100" alt="...">
+              </div>
+              <div class="slide-item">
+                <img src="./Images/img4.jpg active" class="d-block w-100" alt="...">
+              </div>
+              <div class="slide-item">
+                <img src="./Images/img2.jpg" class="d-block w-100" alt="...">
               </div>
             </div>
-           </div>
-           <section class="Home">
-            <div class="slider">
-             <div class="slides2">
-               <div class="container">
-                 <div class="caption">
-                   <h1>mountain and  climb with us</h1>
-                   <p>lorun ipsum text here.</p>
-                   <a href="#">Have a Tour now</a>
-                 </div>
-               </div>
-             </div>
-            </div>  
-              <section class="Home">
-              <div class="slider">
-               <div class="slides3">
-                 <div class="container">
-                   <div class="caption">
-                     <h1>mountain and  climb with us</h1>
-                     <p>lorun ipsum text here.</p>
-                     <a href="#">Have a Tour now</a>
-                   </div>
-                 </div>
-               </div>
-              </div>
-            </section>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
             <!-- mr Atif's section -->
     <section>
     </section>

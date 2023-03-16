@@ -4,17 +4,132 @@
     box-sizing: border-box;
 }
 body{
-    background-color: rgb(3, 155, 201);
-    height: 100vh;
-    
+    background-color: rgb(50, 101, 197);
+    margin: 0%;
+    padding: 0%;
+    position: relative;
 }
-.img{
+/* slider css strats from here each slide has different images and different css to ensure accuracy we put them in different parts. */
+.Home{
+     height: 500px;
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+.Home .slides1.active{
+    display: flex;
+}
+.slides1{
     background-image: url(../Images/andy-townsend-photos-052-2_5a6b6bebe86816d1bd1a03ada1af191b.webp);
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    background-position: top;
+    z-index: 1;
+    display: none;
+    animation: slides1 2s ease;
+}
+ @keyframes slides1{
+    0%{
+         transform:scale(1.1);
+    }
+    /* 100%{ */
+         /* transform: scale(1); */
+    /* } */
+ }
+ .slides2{
+    background-image: url(../Images/img4.jpg);
+    position: absolute;
+    top: 0%;
+    left: 0%;
     width: 100%;
     height: 550px;
-    background-repeat: no-repeat;
     background-size: cover;
-    background-position: contain; 
-      
+    background-position: top;
+    z-index: 1;
+    display: none;
+    animation: slides2 2s ease;
 }
-
+ @keyframes slides2{
+    0%{
+         transform:scale(1.1);
+    }
+    100%{
+         transform: scale(1);
+    }
+ }
+ .slides3{
+    background-image: url(../Images/img1.jpeg);
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 550px;
+    background-size: cover;
+    background-position: top;
+    z-index: 1;
+    display: none;
+    animation: slides3 2s ease;
+}
+ @keyframes slides3{
+    0%{
+         transform:scale(1.1);
+    }
+    100%{
+         transform: scale(1);
+    }
+ }
+.container{
+    max-width: 1170px;
+    margin: auto;
+}
+.Home .container{
+    flex-grow: 1;
+}
+.Home .caption{
+    width: 50%;
+}
+.Home .caption h1{
+        font-size: 45px;
+        color: rgb(24, 114, 150);
+        margin: 0;
+        
+}
+.Home .caption p{
+        font-size: 20px;
+        color: rgb(0, 23, 58);
+        margin: 15px 0 30px;
+}
+.Home .caption a{
+    display: inline-block;
+    padding: 10px 30px;
+    background-color: rgb(6, 252, 137);
+    text-decoration: none;
+    color: black;
+} 
+.Home.indicators{
+    position: absolute;
+    left:50%;
+    bottom: 30px;
+    z-index: 2;
+}
+.Home.indicators div{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    color: #fff;
+    background-color: aqua;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 25px;
+    margin: 0 3px;
+}
+.ll{
+    background-color: #000;
+    height: 500px;
+    width: 100%;
+}
+/* slider css ends */

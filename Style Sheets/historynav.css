@@ -5,8 +5,8 @@
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 .container{
-    width: 90%;
-    padding: 20px;
+    width: 30%;
+     padding: 20%;
     margin: 100px auto;
     display: flex;
     flex-direction: row;

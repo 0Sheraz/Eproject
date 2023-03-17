@@ -6,7 +6,7 @@
 }
 .container{
     width: 30%;
-     padding: 20%;
+     padding: 2%;
     margin: 100px auto;
     display: flex;
     flex-direction: row;
@@ -20,7 +20,7 @@
     cursor: pointer;
 }
 .container .box{
-    margin-top: -8%;
+    margin-top: -3%;
 }
 .box img{
     height: 400px;

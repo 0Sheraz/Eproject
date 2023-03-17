@@ -1,10 +1,44 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+     
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 body{
-    background-color:#000080;
+    background-color: #0e008f;
+}
+.carousel-item{
+    height: 600px;
+}
+.d-block{
+    height: 600px;
+}
+@media screen and (min-width: 993px){
+    .dropdown:hover .dropdown-menu{
+        display: block !important;
+    }
+    .dropdown:focus .dropdown-menu{
+        display: block !important;
+    }
+    .dropdown .dropdown-menu.show{
+        display: none !important;
+    }
+}
+.nav-item:hover{
+    color: beige;
+}
+.nav-link{
+    color: aqua;
+}
+.dropdown-menu{
+    background-color: transparent;
+}
+.dropdown-item{
+    color: rgb(4, 104, 90);
+}
+.dropdown-item:hover{
+    color: aquamarine;
+    background-color: black;
 }
 
  

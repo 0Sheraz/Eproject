@@ -1,50 +1,3 @@
-*{
-    margin: 0;
-    padding: 0;
-     
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
-
-.carousel-item{
-    height: 600px;
-}
-
-.d-block{
-    height: 600px;
-}
-
-@media screen and (min-width: 993px){
-    .dropdown:hover .dropdown-menu{
-        display: block !important;
-    }
-    .dropdown:focus .dropdown-menu{
-        display: block !important;
-    }
-    .dropdown .dropdown-menu.show{
-        display: none !important;
-    }
-}
-
-.nav-item-shop :hover{
-    color: beige;
-}
-.nav-link{
-    color: aqua;
-}
-
-.dropdown-menu{
-    background-color: transparent;
-}
-
-.dropdown-item-shop{
-    color: rgb(4, 104, 90);
-}
-
-.dropdown-item-shop:hover{
-    color: aquamarine;
-    background-color: black;
-}
-
 .card {
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -96,5 +49,3 @@
         background-color: transparent;
         border: #4CAF50 3px solid;
   }
-  
- 

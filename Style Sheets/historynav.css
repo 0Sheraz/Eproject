@@ -6,7 +6,6 @@
 
 /* navbar css */
 .container{
-<<<<<<< HEAD
     max-width: 1170px;
     margin: auto;
 }
@@ -57,10 +56,8 @@
     /* width: 40%; */
     width: 90%;
     padding: 10px;
-=======
     width: 30%;
      padding: 2%;
->>>>>>> e68edab5b7d890c87d3b7f7c74ad183413805c5d
     margin: 100px auto;
     display: flex;
     flex-direction: row;
@@ -75,16 +72,14 @@
     transition: 1s;
     cursor: pointer;
 }
-<<<<<<< HEAD
 
 .history .box {
     margin-top: -8%;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2), 0 4px 16px 0 rgba(0, 0, 0, .2);
     text-align: center;
-=======
+}
 .container .box{
     margin-top: -3%;
->>>>>>> e68edab5b7d890c87d3b7f7c74ad183413805c5d
 }
 
 .box img {

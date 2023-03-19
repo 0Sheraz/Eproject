@@ -1,4 +1,38 @@
-.card {
+.navbar{
+  background-color: transparent !important;
+}
+.nav-item-shop:hover{
+ background-color: rgb(177, 22, 22);
+ margin-bottom: 2px;
+ color: #f7c7c7;
+}
+
+.nav-item-shop:hover{
+     color: rgb(255, 254, 254);
+}
+.nav-item-shop{
+ color: rgb(255, 255, 255);
+}
+
+@media screen and (min-width: 993px){
+ .dropdown:hover .dropdown-menu{
+     display: block !important;
+ }
+ .dropdown:focus .dropdown-menu{
+     display: block !important;
+ }
+ .dropdown .dropdown-menu.show{
+     display: none !important;
+ }
+}
+
+.nav-item-shop{
+ transition: all 1000ms ease-in-out 0s;
+ animation-duration: 1000ms;
+ color: #ffffff;
+ cursor: pointer;
+}
+.card{
     border: 1px solid #ccc;
     border-radius: 5px;
     padding: 8px;

@@ -1,50 +1,102 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-.navbar{
-    background-color: aqua;
 
-}
+/* navbar css */
 .container{
+    max-width: 1170px;
+    margin: auto;
+}
+
+.nav-item:hover {
+    background-color: rgb(0, 0, 0);
+    margin-bottom: 3px;
+    color: #ffffff;
+}
+
+.nav-link:hover {
+    color: rgb(255, 254, 254);
+}
+
+.nav-link {
+    color: rgb(255, 255, 255);
+}
+
+@media screen and (min-width: 993px) {
+    .dropdown:hover .dropdown-menu {
+        display: block !important;
+    }
+
+    .dropdown:focus .dropdown-menu {
+        display: block !important;
+    }
+
+    .dropdown .dropdown-menu.show {
+        display: none !important;
+    }
+}
+
+.nav-item {
+    transition: all 1000ms ease-in-out 0s;
+    animation-duration: 1000ms;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+/* navbar css-end */
+
+.search-bar {
+    color: aliceblue;
+    background-color: #000080;
+}
+
+.history {
+    /* width: 40%; */
     width: 90%;
-    padding: 20px;
+    padding: 10px;
     margin: 100px auto;
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
-.box{
+
+.box {
+    /* width: 100%; */
     width: 40%;
     margin: 0 10px;
-    box-shadow: 0 0 20px 2px rgba(0, 0, 0, .1);
+    height: 400px;
     transition: 1s;
     cursor: pointer;
 }
-.container .box{
+
+.history .box {
     margin-top: -8%;
-    border: 1px solid grey;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2), 0 4px 16px 0 rgba(0, 0, 0, .2);
     text-align: center;
-    border-radius: 5px;
 }
-.box img{
+
+.box img {
     height: 400px;
     display: block;
     width: 100%;
-    border-radius: 5px;
 }
-img{
+
+img {
     display: block;
 }
-.box:hover{
-   
-transform: scale(1.3);
-z-index: 2;
+
+.box:hover {
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2), 0 4px 16px 0 rgba(0, 0, 0, .2);
+    transform: scale(1.3);
+    z-index: 2;
 }
-.text{
+
+.text {
     font-size: 3rem;
     margin-top: -70px;
     color: rgb(255, 255, 255);
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-decoration: none;
 }

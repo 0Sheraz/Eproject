@@ -24,6 +24,7 @@
 }
 .box img{
     height: 400px;
+    overflow: hidden;
     display: block;
     width: 100%;
     border-radius: 5px;

@@ -27,7 +27,6 @@ body{
         display: none !important;
     }
 }
-
 .nav-link:hover{
     color: beige;
 }
@@ -74,8 +73,8 @@ select{
     margin-bottom: 30% !important;
     height: 70px;
     width: 180px;
-    background-color: rgba(83, 47, 0, 0.973);
-    color: aqua;
+    background-color:  peachpuff;
+    color: rgb(3, 7, 7);
     border: none;
     text-align: center;
     font-size: 30px;
@@ -83,7 +82,19 @@ select{
     cursor:pointer;
 }
 select:hover{
-    background-color: rgba(83, 47, 0, 0.7);   
+    background-color:rgba(0, 0, 0, 0.7);   
+    color: peachpuff;
+}
+.btn{
+    height: 60px;
+    width: 100px;
+    background-color: peachpuff;
+    font-size: 20px;
+    margin-left: 50px;
+}
+.btn:hover{
+    background-color: rgba(0, 0, 0, 0.7);
+    color: peachpuff;
 }
 .box:hover {
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2), 0 4px 16px 0 rgba(0, 0, 0, .2);
@@ -126,7 +137,7 @@ img {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding-top: 20%;
+     
     overflow: hidden;
     
 }

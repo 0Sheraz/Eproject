@@ -2,79 +2,16 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-<<<<<<< HEAD
-}
+} 
 body{
-    background-color: rgb(3, 155, 201);
-    height: 100vh;
-    /* position: relative;
-     */
+    background-color: rgb(0, 135, 197);
+    overflow-x: hidden;
 }
-.img{
-    background-image: url(../andy-townsend-photos-052-2_5a6b6bebe86816d1bd1a03ada1af191b.webp);
-    width: 100%;
-    height: 600px;
-    background-repeat: no-repeat;
-    background-size:cover; 
-    /* transition: 3000ms;   */
-    position: absolute;
-    margin-top: -60px;
-    z-index: -1 ;
-}
-    
-/* .img{
-    background-image: url( ../Images/2cfe6fb7141c317342212581ce85d385.jpg);
-     height: 500px;
-     width: 100%;
-     display: block;
-} */
-=======
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
->>>>>>> 93518100d5b2f45f7cc517884db735f03da3d55c
-
-body{
-    background-color: #0e008f;
-}
-
 .carousel-item{
     height: 600px;
 }
-
 .d-block{
     height: 600px;
-}
-@media screen and (min-width: 993px){
-    .dropdown:hover .dropdown-menu{
-        display: block !important;
-    }
-    .dropdown:focus .dropdown-menu{
-        display: block !important;
-    }
-    .dropdown .dropdown-menu.show{
-        display: none !important;
-    }
-}
-.nav-link:hover{
-    color: beige;
-}
-
-.nav-link{
-    color: aqua;
-}
-
-.dropdown-menu{
-    background-color: transparent;
-    border: none;
-}
-
-.dropdown-item{
-    color: rgb(1, 247, 42);
-}
-
-.dropdown-item:hover{
-    color: aquamarine;
-    background-color: black;
 }
 .feature{
     background-image: url(../Images/pngegg.png);
@@ -104,9 +41,9 @@ select{
     background-color:  peachpuff;
     color: rgb(3, 7, 7);
     border: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: center;
     font-size: 30px;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     cursor:pointer;
 }
 select:hover{
@@ -165,9 +102,7 @@ img {
     display: flex;
     flex-direction: row;
     justify-content: center;
-     
-    overflow: hidden;
-    
+    overflow: hidden; 
 }
 .p3{
     color: aliceblue;
@@ -177,4 +112,8 @@ img {
 .p4{
     color: aliceblue;
     padding-left: 550px;
+}
+iframe{
+    height: 400px;
+    width: 100%;
 }

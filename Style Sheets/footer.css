@@ -1,3 +1,6 @@
-
-
-
+footer{
+    overflow-x: hidden;
+}
+.Footer-brand{
+    margin-left: 50px;
+}

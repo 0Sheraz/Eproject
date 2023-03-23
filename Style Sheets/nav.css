@@ -48,9 +48,12 @@
  .navbar-brand{
     transition: 500ms;
  }
+ .dropdown-item{
+    color: antiquewhite;
+ }
  .dropdown-item:hover{
     background-color: #050404;
-    color: #fff;
+    color: #ffbc04;
  }
 
  

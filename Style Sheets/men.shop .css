@@ -2,17 +2,11 @@
   background-color: transparent !important;
 }
 .nav-item-shop:hover{
- background-color: rgb(177, 22, 22);
- margin-bottom: 2px;
-}
-
-.nav-item-shop:hover{
-     color: rgb(255, 254, 254);
+     color: rgb(255, 255, 255);
 }
 .nav-item-shop{
- color: rgb(255, 255, 255);
+ color: rgb(255, 254, 254);
 }
-
 @media screen and (min-width: 993px){
  .dropdown:hover .dropdown-menu{
      display: block !important;
@@ -27,7 +21,7 @@
 .nav-item-shop{
  transition: all 1000ms ease-in-out 0s;
  animation-duration: 1000ms;
- color: #ffffff;
+ color: #000000;
  cursor: pointer;
 }
 

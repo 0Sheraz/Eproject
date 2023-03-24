@@ -1,6 +1,14 @@
-footer{
-    overflow-x: hidden;
-}
-.Footer-brand{
-    margin-left: 50px;
-}
+
+footer {
+    background-image: url('../Images/img1.jpeg');
+    background-size: cover;
+    background-position: center;
+    padding: 50px 0;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+

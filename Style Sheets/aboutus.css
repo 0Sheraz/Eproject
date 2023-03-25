@@ -70,14 +70,10 @@
     margin: 0px 130px;
   }
   .slider-prev{
-    margin-top: -100px;
-    margin-right: 900px;
-    border: none;
+    
   }
 .slider-next{
-    margin-left: 900px;
-    margin-top: -100px;
-    border: none;
+  
 }
   .card-img1 {
     width: 100%;

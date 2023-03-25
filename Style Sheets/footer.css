@@ -14,8 +14,9 @@ footer {
     background-image: url('../Images/img1.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: top;
     background-attachment: fixed;
-    height: 420px; /* adjust this height to match the height of your footer */
+    height: 450px; 
   }
   
 

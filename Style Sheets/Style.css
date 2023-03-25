@@ -4,11 +4,21 @@
     box-sizing: border-box;
 } 
 body{
-    background-color: rgb(0, 135, 197);
+    background-color: rgb(4, 170, 182);
     overflow-x: hidden;
 }
 .carousel-item{
     height: 600px;
+}
+.carousel-caption h5{
+    margin-bottom: 150px;
+    font-size: 40px;
+    color: rgb(0, 0, 0) !important;
+}
+.carousel-caption p{
+    margin-bottom: 150px;
+    font-size: 30px;
+    color: rgb(0, 0, 0) !important;
 }
 .d-block{
     height: 600px;

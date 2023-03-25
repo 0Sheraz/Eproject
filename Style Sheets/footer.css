@@ -1,14 +1,21 @@
 
 footer {
-    background-image: url('../Images/img1.jpeg');
     background-size: cover;
     background-position: center;
     padding: 50px 0;
+    height: 450px;
   }
   
   .container {
     max-width: 1200px;
     margin: 0 auto;
+  }
+  .parallax {
+    background-image: url('../Images/img1.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 420px; /* adjust this height to match the height of your footer */
   }
   
 

@@ -15,6 +15,15 @@ body{
     margin-bottom: 150px;
     font-size: 40px;
     color: rgb(0, 0, 0) !important;
+    @keyframes slide-in-down{
+    from{
+    transform: translate3d(0, -100%, 0);
+    visibility: visible;
+    }
+    to{
+    transform: translate3d(0, 0, 0);
+    }
+    }
 }
 .carousel-caption p{
     margin-bottom: 150px;
@@ -183,8 +192,28 @@ iframe{
     width: 100%;
 }
 .Login{
-    font-size: 25px;
+    font-size: 20px;
     background-color: black;
     color: beige;
     border-radius: 5px;
+}
+.Login:hover{
+    font-size: 25px;
+    background-color: rgba(245, 245, 220, 0.664);
+    color: black;
+    border: 3px solid;
+    transition: 800ms;
+}
+.signup{
+    font-size: 20px;
+    background-color: black;
+    color: beige;
+    border-radius: 5px;
+}
+.signup:hover{
+    font-size: 25px;
+    background-color: rgba(245, 245, 220, 0.664);
+    color: black;
+    border: 3px solid;
+    transition: 800ms;
 }

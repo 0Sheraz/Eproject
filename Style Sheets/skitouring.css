@@ -1,0 +1,9 @@
+.parallax1{
+    background-image: url('../Images/footer.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+    height: 1000px; 
+     
+}

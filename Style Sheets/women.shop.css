@@ -1,73 +1,21 @@
-*{
-    margin: 0;
-    padding: 0;
-}
-
-.carousel-item{
-    height: 600px;
-}
-
-.d-block{
-    height: 600px;
-}
-
-@media screen and (min-width: 993px){
-    .dropdown:hover .dropdown-menu{
-        display: block !important;
-    }
-    .dropdown:focus .dropdown-menu{
-        display: block !important;
-    }
-    .dropdown .dropdown-menu.show{
-        display: none !important;
-    }
-}
-
-.nav-item-shop :hover{
-    color: beige;
-}
-.nav-link{
-    color: aqua;
-}
-
-.dropdown-menu{
-    background-color: transparent;
-}
-
-.dropdown-item-shop{
-    color: rgb(4, 104, 90);
-}
-
-.dropdown-item-shop:hover{
-    color: aquamarine;
-    background-color: black;
-}
-
 .card {
-    border: 1px solid #ccc;
     border-radius: 5px;
     padding: 8px;
-    border-radius: 10%;
+    border: 5px solid rgb(0, 0, 0);
     width: 300px;
     margin-top: 10%;
     display: inline-block;
-    background-color: rgb(32, 29, 29);
+    background-color: rgb(90, 86, 86);
+    margin-left: 60px;
   }
-  
-  .card img {
-    border-radius: 10%;
-    width: 100%;
-    height: 300px;
-    background-image: url(../Images/shred-slam-cap-light-credit-card-helmet.jpg);
-  }
-  
-  .card h2 {
-    font-size: 20px;
-    margin: 10px 0;
-    color: aqua;
-  }
-  
-  .card p {
+    .card-img17 {
+      width: 100%;
+      height: 300px;
+      background-image: url(../Images/womensshop.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+.card p {
     font-size: 16px;
     color: #666;
     margin: 10px 0;
@@ -89,10 +37,32 @@
     margin-left: 80px;
   }
   
-  .card button:hover{
-        color: #4CAF50;
-        background-color: transparent;
-        border: #4CAF50 3px solid;
+  .card button:hover {
+    color: #4CAF50;
+    background-color: transparent;
+    border: #4CAF50 3px solid;
   }
   
- 
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+  
+  @media (max-width: 768px) {
+    .cards {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .card {
+      margin-top: 5%;
+      margin-left: 0;
+      margin-right: 0;
+      text-align: center;
+    }
+  }

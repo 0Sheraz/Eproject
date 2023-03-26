@@ -1,29 +1,3 @@
-.navbar{
-  background-color: transparent !important;
-}
-.nav-item-shop:hover{
-     color: rgb(255, 255, 255);
-}
-.nav-item-shop{
- color: rgb(255, 254, 254);
-}
-@media screen and (min-width: 993px){
- .dropdown:hover .dropdown-menu{
-     display: block !important;
- }
- .dropdown:focus .dropdown-menu{
-     display: block !important;
- }
- .dropdown .dropdown-menu.show{
-     display: none !important;
- }
-}
-.nav-item-shop{
- transition: all 1000ms ease-in-out 0s;
- animation-duration: 1000ms;
- color: #000000;
- cursor: pointer;
-}
 .card {
   border-radius: 5px;
   padding: 8px;

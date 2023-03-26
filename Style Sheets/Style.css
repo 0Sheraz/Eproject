@@ -182,3 +182,9 @@ iframe{
     height: 400px;
     width: 100%;
 }
+.Login{
+    font-size: 25px;
+    background-color: black;
+    color: beige;
+    border-radius: 5px;
+}

@@ -1,38 +1,21 @@
-// feauters script not worked 
-const continentSelect = document.getElementById('continent');
-const activitySelect = document.getElementById('activity');
-const submitButton = document.querySelector('.btn');
+const wrapper = document.querySelector('.wrapper');
+const loginLink = document.querySelector('.login-link');
+const registerLink = document.querySelector('.register-link');
+const btnpopup = document.querySelector('.btnLogin-popup');
+const iconClose = document.querySelector('.icon-close');
 
- 
-const options = {
-  oceania: [ 'skiing'],
-  asia: [  'Mountaineering'],
-  'north-america': ['Rock-Climbing' ],
-  europe: ['Ice-Climbing']
-};
-
- 
-continentSelect.addEventListener('change', () => {
-  const selectedContinent = continentSelect.value;
-  const selectedOptions = options[selectedContinent];
-  activitySelect.innerHTML = '';
-  selectedOptions.forEach((option) => {
-    const newOption = document.createElement('option');
-    newOption.value = option;
-    newOption.textContent = option;
-    activitySelect.appendChild(newOption);
-  });
+registerLink.addEventListener('click', ()=> {
+    wrapper.classList.add('active');
 });
 
- 
-submitButton.addEventListener('click', (event) => {
-  event.preventDefault();
-  const selectedContinent = continentSelect.value;
-  const selectedActivity = activitySelect.value;
-  console.log(`Take me to ${selectedContinent} for ${selectedActivity}`);
+loginLink.addEventListener('click', ()=> {
+    wrapper.classList.remove('active');
 });
-// feauters script not worked 
 
-// About us event listners and function 
+btnpopup.addEventListener('click', ()=> {
+    wrapper.classList.add('active-popup');
+});
 
-// About us event lisyners and function 
+iconClose.addEventListener('click', ()=> {
+    wrapper.classList.remove('active-popup');
+});

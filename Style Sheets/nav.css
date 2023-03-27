@@ -20,7 +20,7 @@
     color: rgb(255, 251, 251);
     transition: all 1000ms ease-in-out 0s;
     animation-duration: 1000ms;
-    color: #050404;
+    color: #fff7f7;
  }
 
  @media screen and (min-width: 993px){

@@ -1,9 +1,15 @@
 .parallax1{
-    background-image: url('../Images/footer.jpg');
+    background-image: url('../Images/istockphoto-96995397-612x612.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
     background-attachment: fixed;
-    height: 1000px; 
-     
+    height: 600px; 
+}
+.skitour-front{
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    padding-top: 200px;
+    justify-content: center;
+    text-align: center;
 }

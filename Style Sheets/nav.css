@@ -1,6 +1,6 @@
 .navbar{
     background-color: transparent  !important;
-    z-index: 100000;
+   
 }
 .nav-item:hover{
     background-color: rgb(0, 0, 0);
@@ -10,7 +10,6 @@
     color: rgb(248, 244, 244); 
 }
 .nav-item:hover{
-    background-color: rgb(0, 0, 0);
     margin-bottom: 2px;
 }
 .nav-item:hover{
@@ -20,7 +19,7 @@
     color: rgb(255, 251, 251);
     transition: all 1000ms ease-in-out 0s;
     animation-duration: 1000ms;
-    color: #fff7f7;
+     
  }
 
  @media screen and (min-width: 993px){
@@ -36,7 +35,6 @@
  }
  .nav-link{
     color: rgb(0, 0, 0);
-    color: #ffffff;
     cursor: pointer;
  }
  .dropdown-menu{

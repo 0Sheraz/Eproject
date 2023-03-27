@@ -4,12 +4,10 @@
     box-sizing: border-box;
 } 
 body{
-    background-color: rgb(4, 170, 182);
-    overflow-x: hidden;
+    background-color: rgb(255, 255, 255);
 }
-.carousel-item{
-    height: 600px;
-    width: 100%;
+.carousel{
+  height: 900px;
 }
 .carousel-caption h5{
     margin-bottom: 150px;
@@ -27,14 +25,15 @@ body{
 }
 :root{
     --background-dark: #2d3548;
-    --text-light: rgba(255,255,255,0.6);
-    --text-lighter: rgba(255,255,255,0.9);
+    --text-light: rgba(0, 0, 0, 0.6);
+    --text-lighter: rgba(0, 0, 0, 0.9);
     --spacing-s: 8px;
     --spacing-m: 16px;
     --spacing-l: 24px;
     --spacing-xl: 32px;
     --spacing-xxl: 64px;
     --width-container: 1200px;
+    background-color: aqua;
   }
   .hero-section{
     align-items: flex-start;
@@ -69,6 +68,7 @@ body{
   .card{
     list-style: none;
     position: relative;
+    border-radius: 30px;
   }
   
   .card:before{
@@ -278,12 +278,12 @@ img {
     overflow: hidden; 
 }
 .p3{
-    color: aliceblue;
+    color: rgb(3, 3, 3);
     padding-left: 550px;
     padding-top: 10%;
 }
 .p4{
-    color: aliceblue;
+    color: rgb(0, 0, 0);
     padding-left: 550px;
 }
 iframe{

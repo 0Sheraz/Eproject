@@ -15,7 +15,39 @@
   }
 }
 
-  
+ /* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+  .Footer-brand {
+    font-size: 1.5rem;
+  }
+  .col-md-3, .col-md-4 {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+}
+
+ 
+@media (min-width: 768px) { 
+  .Footer-brand {
+    font-size: 2rem;
+  }
+  .col-md-3, .col-md-4 {
+    flex: 0 0 20%;
+    max-width: 20%;
+  }
+}
+
+ 
+@media (min-width: 992px) { 
+  .Footer-brand {
+    font-size: 2.5rem;
+  }
+  .col-md-3, .col-md-4 {
+    flex: 0 0 16.67%;
+    max-width: 16.67%;
+  }
+}
+ 
   .container {
     max-width: 1200px;
     margin: 0 auto;

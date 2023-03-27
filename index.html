@@ -2,30 +2,26 @@
 <html lang="en">
 
 <head>
-<<<<<<< HEAD
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <title>Alps Ascents</title>
   <!-- bootstrap css link -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <!-- bootstrap css link-end -->
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    
-    <!-- css link -->
-    <link rel="stylesheet" href="./Style Sheets/nav.css">
+  <!-- bootstrap css link-end -->
+  <!-- css link -->
     <link rel="stylesheet" href="./Style Sheets/Style.css">
-    <!-- css link-end -->
-    
-    <title>Document</title>
-  </head>
+    <link rel="stylesheet" href="./Style Sheets/nav.css">
+    <link rel="stylesheet" href="./Style Sheets/footer.css">
+  <!-- css link-end -->
   
-  <body>
-  <!-- Bootstrap cdn's are placed up there  -->
-  <!-- bootstrap cdn links -->
+</head>
+<body>
+  <!-- bootstrap script cdn links -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
     crossorigin="anonymous"></script>
@@ -35,28 +31,30 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
     integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
     crossorigin="anonymous"></script>
-  <!-- bootstrap cdn links end -->
-
-  <!-- mr.sheraz's section  -->
+  <!-- bootstrap script cdn links end -->
+ 
   <header>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container">
         <a class="navbar-brand" href="#">logo</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="#navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon" style="color: black;"></span>
+          <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link active aria-current="page  style="color: aliceblue;">Home</a>
             </li>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
+              <a class="nav-link" href="about us.html">About us</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">History</a>
+              <a class="nav-link" href="contactus.html">Contact us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="history.html">History</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -74,16 +72,24 @@
                 Shop
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Men</a></li>
-                <li><a class="dropdown-item" href="#">Womens</a></li>
-                <li><a class="dropdown-item" href="#">Equipments</a></li>
+                <li><a class="dropdown-item" href="shop.men.html">Men</a></li>
+                <li><a class="dropdown-item" href="shop.women.html">Womens</a></li>
+                <li><a class="dropdown-item" href="equipments.html">Equipments</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Register Now
+              </a>
+              <ul class="dropdown-menu">
+                <li> <button class="Login">Log In</button></li> <br>
+                <li> <button class="signup">SignUp</button></li>
               </ul>
           </ul>
         </div>
       </div>
     </nav>
-
-    <!-- carousel -->
+    <!-- carousel Starts-->
     <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
@@ -95,21 +101,21 @@
       </div>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <video src="/Images/794c43549e3806cede47cfbbef08dd1f.mp4" class="d-block w-100" alt="..." autoplay>
-            <div class="carousel-caption d-none d-md-block">
-              <h5>First slide label</h5>
-              <p>Some representative placeholder content for the first slide.</p>
-            </div>
+          <img src="./Images/img1.jpeg" class="d-block w-100">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>First slide label</h5>
+            <p>Some representative placeholder content for the first slide.</p>
+          </div>
         </div>
         <div class="carousel-item">
-          <img src="/Images/img4.jpg" class="d-block w-100" alt="...">
+          <img src="/Images/2ndslider.jpg" class="d-block w-100">
           <div class="carousel-caption d-none d-md-block">
             <h5>Second slide label</h5>
             <p>Some representative placeholder content for the second slide.</p>
           </div>
         </div>
         <div class="carousel-item">
-          <img src="..." class="d-block w-100" alt="...">
+          <img src="./Images/slider22.jpg " class="d-block w-100" style="background-position: top;">
           <div class="carousel-caption d-none d-md-block">
             <h5>Third slide label</h5>
             <p>Some representative placeholder content for the third slide.</p>
@@ -127,146 +133,184 @@
         <span class="visually-hidden">Next</span>
       </button>
     </div>
+    </header>
     <!-- carousel-end -->
-    <!-- mr Atif's section -->
-=======
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <title>Document</title>
-     <!-- bootstrap css link -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
-  integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-<!-- bootstrap css link end -->
-<link rel="stylesheet" href="./Style Sheets/nav.css">
-<link rel="stylesheet" href="./Style Sheets/Style.css">
-<link rel="stylesheet" href="./Style Sheets/footer.css">
-</head>
-<body>
-   <!-- bootstrap cdn links -->
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-   integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-   crossorigin="anonymous"></script>
- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-   integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
-   crossorigin="anonymous"></script>
- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
-   integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
-   crossorigin="anonymous"></script>
- <!-- bootstrap cdn links end -->
-
-
-
-  <!-- mr.sheraz's section  -->
-    <header>
-      <!-- navbar starts -->
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container">
-              <a class="navbar-brand" href="#">logo</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="#navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="#">Home</a>
-                  </li>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">About</a>
-                </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="../Eproject/shop.html">History</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Catogries
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Climbing</a></li>
-                      <li><a class="dropdown-item" href="#">Treking</a></li>
-                      <li><a class="dropdown-item" href="#">Ski touring</a></li>
-                    </ul>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Shop
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="../Eproject/">Men</a></li>
-                      <li><a class="dropdown-item" href="#">Womens</a></li>
-                      <li><a class="dropdown-item" href="#">Equipments</a></li>
-                    </ul>
-                </ul>
-              </div>
-            </div>
-            <button class="sign in">sign in</button>/
-            <button class="sign up">sign up</button>
-          </nav>
-          <!-- navbar ends  -->
-          
-          <!-- carousel start -->
-          <div id="carouselExampleCaptions" class="carousel slide">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="/Images/2cfe6fb7141c317342212581ce85d385.jpg" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>First slide label</h5>
-                  <p>Some representative placeholder content for the first slide.</p>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img src="/Images/img4.jpg" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Second slide label</h5>
-                  <p>Some representative placeholder content for the second slide.</p>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img src="/Images/img2.jpg" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Third slide label</h5>
-                  <p>Some representative placeholder content for the third slide.</p>
-                </div>
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-          </header>
-          <!-- carousel-end -->
->>>>>>> e68edab5b7d890c87d3b7f7c74ad183413805c5d
+    <!-- Taking me to feeature starts  -->
     <section>
       <div class="feature">
         <h5 class="p1">Take me to</h5>
-        <select name="select" id="#kk">
-          <option value="link">Oceania</option>
-          <option value="link">K2</option>
+        <select name="continent" id="continent">
+          <option value="oceania">Oceania</option>
+          <option value="asia">Asia</option>
+          <option value="north-america">North America</option>
+          <option value="europe">Europe</option>
         </select>
-        For
-
+        <for class="p2">For</for>
+        <select name="activity" id="activity">
+          <option value="rock-climbing">Rock-Climbing</option>
+          <option value="ice-climbing">Ice-Climbing</option>
+          <option value="mounteering">Mountaineering</option>
+          <option value="skiing">Skiing</option>
+          
+        </select>
+        <button class="btn">Let's go</button>
+      </div>
+      <!-- taking me to feature ends  -->
+      <!-- body offer cards starts  -->
+      <h1 class="p3">Offers</h1>
+      <h3 class="p4">Places To Visit</h3>
+      <div class="history">
+        <a href="./index.html">
+          <div class="box">
+            <img src="/Images/snowy-mountains.jpg">
+            <p class="text">Oceania</p>
+        </a>
+      </div>
+      <a href="./index.html">
+        <div class="box">
+          <img src="/Images/imgcard.jpg">
+          <p class="text">Europe</p>
+      </a>
+      </div>
+      <a href="./index.html">
+        <div class="box">
+          <img src="/Images/K2-district-Karakoram-Range-portion-Gilgit-Baltistan-region.webp">
+          <p class="text">Asia</p>
+      </a>
+      </div>
+      </div>
+      <div class="history">
+        <a href="./index.html">
+          <div class="box">
+            <img src="/Images/nepal.jpg">
+            <p class="text">Nepal</p>
+        </a>
+      </div>
+      <a href="./index.html">
+        <div class="box">
+          <img src="/Images/imgcard.jpg">
+          <p class="text">Europe</p>
+      </a>
+      </div>
+      <a href="./index.html">
+        <div class="box">
+          <img src="/Images/K2-district-Karakoram-Range-portion-Gilgit-Baltistan-region.webp">
+          <p class="text">Asia</p>
+      </a>
+      </div>
       </div>
     </section>
+    <!-- body offer cards ends -->
+    <main><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14092.752682151231!2d86.91622032338013!3d27.988138821006448!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39e854a215bd9ebd%3A0x576dcf806abbab2!2sMt%20Everest!5e0!3m2!1sen!2s!4v1679574997844!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></main>
+    <!-- footer starts  -->
+     <footer class="parallax" >
+      <a class="Footer-brand" href="#">logo</a>
+      <div class="row text-center text-md-left">
+        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+          <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Alps Ascent</h5>
+          <p>A mountain can be defined as a landform that is higher and steeper than a hill as per the dictionary. It
+            stands high above the sea level, which is our surroundings. A mountain commonly has a steep slope and a
+            sharp peak unlike hills that have gradual incline and more rounded peaks.</p>
+        </div>
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+          <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Programs</h5>
+          <p>
+            <a href="#" class="text-white" style="text-decoration: none;">Hiking</a>
+          </p>
+          <p>
+            <a href="#" class="text-white" style="text-decoration: none;">Adventures Location</a>
+          </p>
+          <p>
+            <a href="#" class="text-white" style="text-decoration: none;">Mountain Ascent</a>
+          </p>
+          <p>
+            <a href="#" class="text-white" style="text-decoration: none;">Ski Touring</a>
+          </p>
+        </div>
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+          <h5 class="text-uppercase mb-4 font-weight-bold text-warning"> Useful links</h5>
+          <p>
+            <a href="#" class="text-white" style="text-decoration: none;">Your Account</a>
+          </p>
+          <p>
+            <a href="#" class="text-white" style="text-decoration: none;">Become an Affiliates</a>
+          </p>
+          <p>
+            <a href="#" class="text-white" style="text-decoration: none;">Place to Visit</a>
+          </p>
+          <p>
+            <a href="#" class="text-white" style="text-decoration: none;">Help</a>
+          </p>
+        </div>
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+          <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Contact Us</h5>
+          <p>
+            <i class="fas-fa-home mr-3"></i>New-York,NY-2345,-US
+          </p>
+          <p>
+            <i class="fas-fa-envelope mr-3"></i>aptectgdn.net
+          </p>
+          <p>
+            <i class="fas-fa-phone mr-3"></i>+92 3152629500
+          </p>
+          <p>
+            <i class="fas-fa-print mr-3"></i>+01 435 654 44
+          </p>
+        </div>
+        </div>
+        </div>
+      </div>
+      <hr class="mb-4">
+      <div class="row align-items-center">
+        <div class="col-md-7 col-lg-8">
+          <p>Copyright @2023 All rights reserved by:
+            <a href="#" style="text-decoration: none;">
+              <strong class="text-warning"> Alp Ascent</strong>
+            </a>
+          </p>
 
-    <!-- mr aresh's section -->
-    <article>
-    </article>
-
-    <!-- mrs simran's section -->
-    <footer>
-    </footer>
+        </div>
+        <div class="col-md-5 col-lg-4">
+          <div class="text-center text-md-right">
+            <ul class="list-unstyled list-inline">
+              <li class="list-inline-item">
+                <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i
+                    class="fab fa-facebook"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i
+                    class="fab fa-twitter"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i
+                    class="fab fa-google-plus"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i
+                    class="fab fa-linkedin-in"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i
+                    class="fab fa-youtube"></i></a>
+              </li>
+            </ul>
+            </ul>
+          </div>
+        </div>
+      </div>
+   </div>
+ </div>
+ </div>
+</footer>  
+  <!-- footer ends here  -->
+  <script>
+    $(window).on('scroll', function() {
+      if ($(window).scrollTop() > 50) {
+        $('.navbar').addClass('sticky');
+      } else {
+        $('.navbar').removeClass('sticky');
+      }
+    });
+    </script>
 </body>
-
 </html>

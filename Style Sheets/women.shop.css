@@ -1,0 +1,68 @@
+.card {
+    border-radius: 5px;
+    padding: 8px;
+    border: 5px solid rgb(0, 0, 0);
+    width: 300px;
+    margin-top: 10%;
+    display: inline-block;
+    background-color: rgb(90, 86, 86);
+    margin-left: 60px;
+  }
+    .card-img17 {
+      width: 100%;
+      height: 300px;
+      background-image: url(../Images/womensshop.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+.card p {
+    font-size: 16px;
+    color: #666;
+    margin: 10px 0;
+    color: aquamarine;
+  }
+  
+  .card button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 80px;
+  }
+  
+  .card button:hover {
+    color: #4CAF50;
+    background-color: transparent;
+    border: #4CAF50 3px solid;
+  }
+  
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+  
+  @media (max-width: 768px) {
+    .cards {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .card {
+      margin-top: 5%;
+      margin-left: 0;
+      margin-right: 0;
+      text-align: center;
+    }
+  }

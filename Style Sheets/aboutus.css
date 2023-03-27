@@ -1,0 +1,112 @@
+.image{
+    height: 600px;
+    width: 100%;
+    background-image: url(../Images/about\ us.jpg);
+    background-size: cover;
+    margin-top: -60px;  
+}
+.p6{
+    color: beige;
+    padding-top: 200px;
+    text-align: center;
+}
+.p7{
+    color: beige;
+     font-size: 20px;
+     padding-top: 20px;
+    text-align: center;
+}
+.overlay-style h1{
+    text-align: center;
+}
+.overlay-style{
+    background-color: aliceblue;
+    margin-left: 180px;
+    margin-right: 180px;
+    margin-top: 60px;
+    border-radius: 10px;
+}
+.card-slider-container {
+    position: relative;
+    height: 500px;
+    width: 100%;
+  }
+  .card {
+    flex: 100%;
+    scroll-snap-align: start;
+    background-color: #f8f5f5;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    font-size: 24px;
+  }
+  .card {
+    width: 280px;
+    height: 350px;
+    background-color: #ccc;
+    margin-left: 70px;
+  }
+  .card-slider {
+    display: flex;
+    overflow-x: hidden;
+    scroll-behavior:smooth;
+    scroll-snap-type: x mandatory;
+    width: 1400px;
+  }
+    
+  .card-row {
+    padding: 150px;
+    display: inline-flex;
+    flex-direction: row;
+    scroll-snap-align: start;
+  }
+  .card-slider-controls {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .slider-prev,
+  .slider-next {
+    margin: 0px 130px;
+  }
+  .card-img1 {
+    width: 100%;
+    height: 300px;
+    background-image: url(../Images/men\ wear\ 1.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .card h2 {
+    font-size: 20px;
+    margin: 10px 0;
+    color: aqua;
+  }
+  
+  .card p {
+    font-size: 16px;
+    color: #666;
+    margin: 10px 0;
+    color: aquamarine;
+  }
+  
+  .card button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 80px;
+  }
+  
+  .card button:hover{
+        color: #4CAF50;
+        background-color: transparent;
+        border: #4CAF50 3px solid;
+  }
+  

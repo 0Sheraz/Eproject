@@ -1,55 +1,125 @@
-.navbar{
-  background-color: transparent !important;
+.card {
+  border-radius: 5px;
+  padding: 8px;
+  border: 5px solid rgb(0, 0, 0);
+  width: 300px;
+  margin-top: 10%;
+  display: inline-block;
+  background-color: rgb(90, 86, 86);
+  margin-left: 60px;
 }
-.nav-item-shop:hover{
- background-color: rgb(177, 22, 22);
- margin-bottom: 2px;
- color: #f7c7c7;
-}
-
-.nav-item-shop:hover{
-     color: rgb(255, 254, 254);
-}
-.nav-item-shop{
- color: rgb(255, 255, 255);
-}
-
-@media screen and (min-width: 993px){
- .dropdown:hover .dropdown-menu{
-     display: block !important;
- }
- .dropdown:focus .dropdown-menu{
-     display: block !important;
- }
- .dropdown .dropdown-menu.show{
-     display: none !important;
- }
-}
-
-.nav-item-shop{
- transition: all 1000ms ease-in-out 0s;
- animation-duration: 1000ms;
- color: #ffffff;
- cursor: pointer;
-}
-.card{
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 8px;
-    border-radius: 10%;
-    width: 300px;
-    margin-top: 10%;
-    display: inline-block;
-    background-color: rgb(32, 29, 29);
-  }
-  
-  .card img {
-    border-radius: 10%;
+  .card-img1 {
     width: 100%;
     height: 300px;
-    background-image: url(../Images/shred-slam-cap-light-credit-card-helmet.jpg);
+    background-image: url(../Images/men\ wear\ 1.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
   }
-  
+  .card-img2{
+    width: 100%;
+    height: 300px;
+    background-image: url(../Images/menwear2.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .card-img3{
+    width: 100%;
+    height: 300px;
+    background-image: url(../Images/menwear6.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .card-img4{
+    width: 100%;
+    height: 300px;
+    background-image: url(../Images/menwear5.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .card-img5{
+    width: 100%;
+    height: 300px;
+    background-image: url(../Images/16_0fe7ac0e2f-bn007-men-yellow-6-full.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .card-img6{
+    width: 100%;
+    height: 300px;
+    background-image: url(../Images/16_c3ddf7cc63-bn007-men-blue-3-full.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .card-img7{
+    width: 100%;
+    height: 300px;
+    background-image: url(../Images/2680762091a1_1.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .card-img8{
+    width: 100%;
+    height: 300px;
+    background-image: url(../Images/16_d489759e3c-bn007-men-red-5-full.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .card-img9{
+    width: 100%;
+    height: 300px;
+    background-image: url(../Images/downparka1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .card-img10{
+    width: 100%;
+    height: 300px;
+    background-image: url(../Images/downparka2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .card-img11{
+    width: 100%;
+    height: 300px;
+    background-image: url(../Images/downparka3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .card-img12{
+    width: 100%;
+    height: 300px;
+    background-image: url(../Images/downparka4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .card-img13{
+    width: 100%;
+    height: 300px;
+    background-image: url(../Images/full\ siut\ 2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .card-img14{
+    width: 100%;
+    height: 300px;
+    background-image: url(../Images/full\ suit\ 3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .card-img15{
+    width: 100%;
+    height: 300px;
+    background-image: url(../Images/full\ suit\ 4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .card-img16{
+    width: 100%;
+    height: 300px;
+    background-image: url(../Images/full\ suit\ 1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
   .card h2 {
     font-size: 20px;
     margin: 10px 0;
@@ -78,8 +148,32 @@
     margin-left: 80px;
   }
   
-  .card button:hover{
-        color: #4CAF50;
-        background-color: transparent;
-        border: #4CAF50 3px solid;
+  .card button:hover {
+    color: #4CAF50;
+    background-color: transparent;
+    border: #4CAF50 3px solid;
+  }
+  
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+  
+  @media (max-width: 768px) {
+    .cards {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .card {
+      margin-top: 5%;
+      margin-left: 0;
+      margin-right: 0;
+      text-align: center;
+    }
   }

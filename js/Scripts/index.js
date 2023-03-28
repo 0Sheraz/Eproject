@@ -1,21 +1,15 @@
-const wrapper = document.querySelector('.wrapper');
-const loginLink = document.querySelector('.login-link');
-const registerLink = document.querySelector('.register-link');
-const btnpopup = document.querySelector('.btnLogin-popup');
-const iconClose = document.querySelector('.icon-close');
+carousal();
 
-registerLink.addEventListener('click', ()=> {
-    wrapper.classList.add('active');
-});
-
-loginLink.addEventListener('click', ()=> {
-    wrapper.classList.remove('active');
-});
-
-btnpopup.addEventListener('click', ()=> {
-    wrapper.classList.add('active-popup');
-});
-
-iconClose.addEventListener('click', ()=> {
-    wrapper.classList.remove('active-popup');
-});
+function carousal() {
+            $("#banner-slider-demo-17").owlCarousel({
+                items: 1,
+                autoplay: true,
+                autoplayTimeout: 5000,
+                nav: false,
+                dots: true,
+                navRewind: true,
+                animateIn: 'fadeIn',
+                animateOut: 'fadeOut',
+                loop: true
+            });
+}

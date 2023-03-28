@@ -5,46 +5,42 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Alps Ascents</title>
-  <!-- bootstrap css link -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
-    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-  <!-- bootstrap css link-end -->
   <!-- css link -->
-    <link rel="stylesheet" href="./Style Sheets/Style.css">
-    <link rel="stylesheet" href="./Style Sheets/nav.css">
-    <link rel="stylesheet" href="./Style Sheets/footer.css">
-  <!-- css link-end -->
-  
+  <link rel="stylesheet" href="/Style Sheets/nav.css">
+  <link rel="stylesheet" href="/Style Sheets/Style.css">
+  <!-- css-link end -->
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
 </head>
+
 <body>
-  <!-- bootstrap script cdn links -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+  <!-- bootstrap cdn link  -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
     crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
-    integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
     crossorigin="anonymous"></script>
-  <!-- bootstrap script cdn links end -->
- 
+  <!-- bootstrap cdn-link end  -->
+
+  <!-- navbar -->
   <header>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container">
-        <a class="navbar-brand" href="#">logo</a>
+    <nav class="navbar navbar-expand-lg bg-body-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">ALPS ASCENTS</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="#navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+          <ul class="navbar ml-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active aria-current="page  style="color: aliceblue;">Home</a>
+              <a class="nav-link active" aria-current="page">Home</a>
             </li>
             </li>
             <li class="nav-item">
@@ -89,8 +85,10 @@
         </div>
       </div>
     </nav>
-    <!-- carousel Starts-->
-    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <!-- navbar-end -->
+
+    <!-- carousel -->
+    <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel-fade">
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
           aria-current="true" aria-label="Slide 1"></button>
@@ -101,21 +99,21 @@
       </div>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="./Images/img1.jpeg" class="d-block w-100 ">
-          <div class="carousel-caption">
+          <img src="/Images/mounteverest.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
             <h5>First slide label</h5>
             <p>Some representative placeholder content for the first slide.</p>
           </div>
         </div>
         <div class="carousel-item">
-          <img src="/Images/2ndslider.jpg" class="d-block w-100">
-          <div class="carousel-caption  d-md-block">
+          <img src="/Images/K2-main-slider.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
             <h5>Second slide label</h5>
             <p>Some representative placeholder content for the second slide.</p>
           </div>
         </div>
         <div class="carousel-item">
-          <img src="./Images/slider22.jpg " class="d-block w-100" style="background-position: top;">
+          <img src="/Images/Carstensz-main-slider.jpg" class="d-block w-100" alt="...">
           <div class="carousel-caption d-none d-md-block">
             <h5>Third slide label</h5>
             <p>Some representative placeholder content for the third slide.</p>
@@ -133,178 +131,65 @@
         <span class="visually-hidden">Next</span>
       </button>
     </div>
-    </header>
     <!-- carousel-end -->
-    <!-- Taking me to feeature starts  -->
-    <section>
-      <div class="feature">
-        <h5 class="p1">Take me to</h5>
-        <select name="continent" id="continent">
-          <option value="oceania">Oceania</option>
-          <option value="asia">Asia</option>
-          <option value="north-america">North America</option>
-          <option value="europe">Europe</option>
-        </select>
-        <for class="p2">For</for>
-        <select name="activity" id="activity">
-          <option value="rock-climbing">Rock-Climbing</option>
-          <option value="ice-climbing">Ice-Climbing</option>
-          <option value="mounteering">Mountaineering</option>
-          <option value="skiing">Skiing</option>
-          
-        </select>
-        <button class="btn">Let's go</button>
-      </div>
-      <!-- taking me to feature ends  -->
-      <!-- body offer cards starts  -->
-      <h1 class="p3">Offers</h1>
-      <h3 class="p4">Places To Visit</h3>
 
-     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    <div class="container-bc mt-20">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-5">
+          <img src="/Images/dekstop.avif" alt="..." class="img-fluid">
+        </div>
+        <div class="col-lg-7">
+          <h2>Introduction</h2>
+          <p>Celebrating 37 years of leading successful expeditions in 2023, Alpine Ascents International, Inc. is a
+            leader in the climbing industry and has been instrumental in setting guiding standards in the international
+            climbing community for most of our history. This year, we will offer more than 30 different expeditions and
+            50 training courses in 14 countries, including the Arctic and Antarctic regions. These expeditions range
+            from three-day climbs of Mount Rainier to training courses in the North Cascades and Alaska, and</p>
+        </div>
+      </div>
 
-<section class="hero-section">
-  <div class="card-grid">
-    <a class="card" href="climbing.html">
-      <div class="card__background" style="background-image: url(https://images.unsplash.com/photo-1557177324-56c542165309?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80)"></div>
-      <div class="card__content">
-        <p class="card__category">Category</p>
-        <h3 class="card__heading">Example Card Heading</h3>
+      <div class="geo-location">
+        <h1>Map</h1>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d115861.00540401897!2d67.1612928!3d24.8414208!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1679954496919!5m2!1sen!2s"
+          width="100%" height="800" mt="10" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
-    </a>
-    <a class="card" href="#">
-      <div class="card__background" style="background-image: url(https://images.unsplash.com/photo-1557187666-4fd70cf76254?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60)"></div>
-      <div class="card__content">
-        <p class="card__category">Category</p>
-        <h3 class="card__heading">Example Card Heading</h3>
-      </div>
-    </a>
-    <a class="card" href="#">
-      <div class="card__background" style="background-image: url(https://images.unsplash.com/photo-1556680262-9990363a3e6d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60)"></div>
-      <div class="card__content">
-        <p class="card__category">Category</p>
-        <h3 class="card__heading">Example Card Heading</h3>
-      </div>
-    </li>
-    <a class="card" href="#">
-      <div class="card__background" style="background-image: url(https://images.unsplash.com/photo-1557004396-66e4174d7bf6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60)"></div>
-      <div class="card__content">
-        <p class="card__category">Category</p>
-        <h3 class="card__heading">Example Card Heading</h3>
-      </div>
-    </a>
-  <div>
-</section>
-    <!-- body offer cards ends -->
-    <main><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14092.752682151231!2d86.91622032338013!3d27.988138821006448!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39e854a215bd9ebd%3A0x576dcf806abbab2!2sMt%20Everest!5e0!3m2!1sen!2s!4v1679574997844!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></main>
-    <!-- footer starts  -->
-     <footer class="parallax" >
-      <a class="Footer-brand" href="#">logo</a>
-      <div class="row text-center text-md-left">
-        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-          <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Alps Ascent</h5>
-          <p>A mountain can be defined as a landform that is higher and steeper than a hill as per the dictionary. It
-            stands high above the sea level, which is our surroundings. A mountain commonly has a steep slope and a
-            sharp peak unlike hills that have gradual incline and more rounded peaks.</p>
-        </div>
-        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-          <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Programs</h5>
-          <p>
-            <a href="#" class="text-white" style="text-decoration: none;">Hiking</a>
-          </p>
-          <p>
-            <a href="#" class="text-white" style="text-decoration: none;">Adventures Location</a>
-          </p>
-          <p>
-            <a href="#" class="text-white" style="text-decoration: none;">Mountain Ascent</a>
-          </p>
-          <p>
-            <a href="#" class="text-white" style="text-decoration: none;">Ski Touring</a>
-          </p>
-        </div>
-        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
-          <h5 class="text-uppercase mb-4 font-weight-bold text-warning"> Useful links</h5>
-          <p>
-            <a href="#" class="text-white" style="text-decoration: none;">Your Account</a>
-          </p>
-          <p>
-            <a href="#" class="text-white" style="text-decoration: none;">Become an Affiliates</a>
-          </p>
-          <p>
-            <a href="#" class="text-white" style="text-decoration: none;">Place to Visit</a>
-          </p>
-          <p>
-            <a href="#" class="text-white" style="text-decoration: none;">Help</a>
-          </p>
-        </div>
-        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
-          <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Contact Us</h5>
-          <p>
-            <i class="fas-fa-home mr-3"></i>New-York,NY-2345,-US
-          </p>
-          <p>
-            <i class="fas-fa-envelope mr-3"></i>aptectgdn.net
-          </p>
-          <p>
-            <i class="fas-fa-phone mr-3"></i>+92 3152629500
-          </p>
-          <p>
-            <i class="fas-fa-print mr-3"></i>+01 435 654 44
-          </p>
-        </div>
-        </div>
-        </div>
-      </div>
-      <hr class="mb-4">
-      <div class="row align-items-center">
-        <div class="col-md-7 col-lg-8">
-          <p>Copyright @2023 All rights reserved by:
-            <a href="#" style="text-decoration: none;">
-              <strong class="text-warning"> Alp Ascent</strong>
-            </a>
-          </p>
 
-        </div>
-        <div class="col-md-5 col-lg-4">
-          <div class="text-center text-md-right">
-            <ul class="list-unstyled list-inline">
-              <li class="list-inline-item">
-                <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i
-                    class="fab fa-facebook"></i></a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i
-                    class="fab fa-twitter"></i></a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i
-                    class="fab fa-google-plus"></i></a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i
-                    class="fab fa-linkedin-in"></i></a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i
-                    class="fab fa-youtube"></i></a>
-              </li>
-            </ul>
-            </ul>
+
+      <!-- card -->
+      <div class="container-card">
+
+        <h1 class="heading"> <span>WORLD CLASSIC TREKS</span></h1>
+      
+        <div class="gallery">
+      
+          <div class="gallery-item">
+            <img class="gallery-image" src="https://mountain-madness.imgix.net/general-images/Places/Asia/Bhutan-Snowman-Trek/shutterstock_222428650.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=800&q=80&w=600&s=109e978d2fbc2f0abbeb432c51c2c46f" alt="person writing in a notebook beside by an iPad, laptop, printed photos, spectacles, and a cup of coffee on a saucer">
           </div>
+      
+          <div class="gallery-item">
+            <img class="gallery-image" src="https://mountain-madness.imgix.net/general-images/On-trek-to-K2-base-camp-with-Angel-Peak-seen-from-Concordia.f1611595698.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5125&fp-y=0.4016&h=800&q=80&w=600&s=5fe7e80eaba5bbf89184850825273430" alt="sunset behind San Francisco city skyline">
+          </div>
+      
+          <div class="gallery-item">
+            <img class="gallery-image" src="https://mountain-madness.imgix.net/general-images/Places/Africa/Rwenzoris/DSC_0290.f1575515816.JPG?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5025&fp-y=0.566&h=800&q=80&w=600&s=6539b7ddb59c2720691dfca560f2f232" alt="people holding umbrellas on a busy street at night lit by street lights and illuminated signs in Tokyo, Japan">
+          </div>
+      
+          <div class="gallery-item">
+            <img class="gallery-image" src="https://mountain-madness.imgix.net/general-images/Guided-Mount-Kilimanjaro-climb-sergey-pesterev-DWXR-nAbxCk-unsplash.f1603739038.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=800&q=80&w=600&s=6ebf4ffa3eec9804857622ae79e15e4d" alt="car interior from central back seat position showing driver and blurred view through windscreen of a busy road at night">
+          </div>
+      
         </div>
+      
       </div>
-   </div>
- </div>
- </div>
-</footer>  
-  <!-- footer ends here  -->
-  <script>
-    $(window).on('scroll', function() {
-      if ($(window).scrollTop() > 50) {
-        $('.navbar').addClass('sticky');
-      } else {
-        $('.navbar').removeClass('sticky');
-      }
-    });
-    </script>
+      <!-- card-end -->
+
+
+
+      <!-- javascript-link -->
+      <script src="/js/Scripts/index.js"></script>
+      <!-- javascript-link-end -->
 </body>
+
 </html>

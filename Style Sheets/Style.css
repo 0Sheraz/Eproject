@@ -1,318 +1,132 @@
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-} 
-body{
-    background-color: rgb(255, 255, 255);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-.carousel{
+
+.container-bc{
+  height: 10%;
+  padding-top: 20px;
+}
+.container-bc img{
+  height: 400px;
+  width: 100%;
+}
+body {
+  font-family: sans-serif;
+  color: #FF4136;
+  text-align: center;
+  font-size: 16px;
+}
+
+  /* geo location */
+h1 {
+  font-size: 4em; /*fallback*/
+  font-size: 10vw;
+}
+.geo-location{
+  width: 100%;
   height: 900px;
+  padding-top: 100px;
 }
-.carousel-caption h5{
-    margin-bottom: 150px;
-    font-size: 40px;
-    color: rgb(0, 0, 0) !important;
-    @keyframes slide-in-down{
-    from{
-    transform: translate3d(0, -100%, 0);
-    visibility: visible;
-    }
-    to{
-    transform: translate3d(0, 0, 0);
-    }
-    }
-}
-:root{
-    --background-dark: #2d3548;
-    --text-light: rgba(0, 0, 0, 0.6);
-    --text-lighter: rgba(0, 0, 0, 0.9);
-    --spacing-s: 8px;
-    --spacing-m: 16px;
-    --spacing-l: 24px;
-    --spacing-xl: 32px;
-    --spacing-xxl: 64px;
-    --width-container: 1200px;
-    background-color: aqua;
-  }
-  .hero-section{
-    align-items: flex-start;
-    background-image: linear-gradient(15deg, #0f4667 0%, #2a6973 150%);
-    display: flex;
-    min-height: 100%;
-    justify-content: center;
-    padding: var(--spacing-xxl) var(--spacing-l);
-  }
-  
-  .card-grid{
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-column-gap: var(--spacing-l);
-    grid-row-gap: var(--spacing-l);
-    max-width: var(--width-container);
-    width: 100%;
-  }
-  
-  @media(min-width: 540px){
-    .card-grid{
-      grid-template-columns: repeat(2, 1fr); 
-    }
-  }
-  
-  @media(min-width: 960px){
-    .card-grid{
-      grid-template-columns: repeat(4, 1fr); 
-    }
-  }
-  
-  .card{
-    list-style: none;
-    position: relative;
-    border-radius: 30px;
-  }
-  
-  .card:before{
-    content: '';
-    display: block;
-    padding-bottom: 150%;
-    width: 100%;
-  }
-  
-  .card__background{
-    background-size: cover;
-    background-position: center;
-    border-radius: var(--spacing-l);
-    bottom: 0;
-    filter: brightness(0.75) saturate(1.2) contrast(0.85);
-    left: 0;
-    position: absolute;
-    right: 0;
-    top: 0;
-    transform-origin: center;
-    transform: scale(1) translateZ(0);
-    transition: 
-      filter 200ms linear,
-      transform 200ms linear;
-  }
-  
-  .card:hover .card__background{
-    transform: scale(1.05) translateZ(0);
-  }
-  
-  .card-grid:hover > .card:not(:hover) .card__background{
-    filter: brightness(0.5) saturate(0) contrast(1.2) blur(20px);
-  }
-  
-  .card__content{
-    left: 0;
-    padding: var(--spacing-l);
-    position: absolute;
-    top: 0;
-  }
-  
-  .card__category{
-    color: var(--text-light);
-    font-size: 0.9rem;
-    margin-bottom: var(--spacing-s);
-    text-transform: uppercase;
-  }
-  
-  .card__heading{
-    color: var(--text-lighter);
-    font-size: 1.9rem;
-    text-shadow: 2px 2px 20px rgba(0,0,0,0.2);
-    line-height: 1.4;
-    word-spacing: 100vw;
-  }
-.carousel-caption p{
-    margin-bottom: 150px;
-    font-size: 30px;
-    color: rgb(0, 0, 0) !important;
-}
-.d-block{
-    height: 600px;
-}
-.feature{
-    background-image: url(../Images/pngegg.png);
-    width: 100%;
-    height: 600px;
-    margin-top: 100px;
-    background-size: cover;  
-    background-position: center;  
-    background-repeat: no-repeat;
+/* geo location-end */
+
+/* card css */
+/*
+
+All grid code is placed in a 'supports' rule (feature query) at the bottom of the CSS (Line 77). 
+        
+The 'supports' rule will only run if your browser supports CSS grid.
+
+Flexbox is used as a fallback so that browsers which don't support grid will still recieve an identical layout.
+
+*/
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat:500);
+
+:root {
+	/* Base font size */
+	font-size: 10px;
 }
 
-@media only screen and (max-width: 768px) {
-  .feature {
-    background-size: contain;
-    background-position: center;
-  }
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
 }
 
-.p1{
-    color: rgb(18, 21, 54);
-    font-size: 40px;
-    padding-top: 300px;
-    padding-left: 40px;
-    cursor:no-drop;
+body {
+	min-height: 100vh;
+	background-color: #fafafa;
 }
-.p2{
-    color: rgb(18, 21, 54);
-    font-size: 50px;
-    padding-top: 300px;
-    padding-left: 220px;
-    cursor:no-drop;
-}
-select{
-    margin-left: 20%;
-    margin-bottom: 30% !important;
-    height: 70px;
-    width: 180px;
-    background-color:  peachpuff;
-    color: rgb(3, 7, 7);
-    border: none;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    text-align: center;
-    font-size: 30px;
-    cursor:pointer;
-}
-select:hover{
-    background-color:rgba(0, 0, 0, 0.7);   
-    color: peachpuff;
-}
-.btn{
-    height: 60px;
-    width: 100px;
-    background-color: peachpuff;
-    font-size: 20px;
-    margin-left: 50px;
-}
-.btn:hover{
-    background-color: rgba(0, 0, 0, 0.7);
-    color: peachpuff;
-}
-.feature{
-    background-image: url(../Images/pngegg.png);
-    width: 100%;
-    height: 600px;
-    margin-top: 100px;
-    background-size: cover;  
-    background-position: center;  
-    background-repeat: no-repeat;
-  }
 
-  @media only screen and (max-width: 768px) {
-    .feature {
-      height: auto;
-      padding-top: 100px;
-      padding-bottom: 50px; 
-      background-size: contain; 
-      background-position: center; 
-    }
-    
-    .p1, .p2 {
-      font-size: 30px; 
-      padding-top: 100px; 
-      padding-left: 20px; 
-      text-align: center;
-    }
-    
-    select {
-      margin: 0 auto; 
-      margin-top: 50px; 
-      margin-bottom: 30px; 
-      height: 50px; 
-      width: 150px; 
-      font-size: 20px; 
-    }
-    
-    .btn {
-      height: 50px; 
-      width: 80px; 
-      font-size: 16px; 
-      margin-left: 10px;  
-    }
-  }
-  
-.box:hover {
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2), 0 4px 16px 0 rgba(0, 0, 0, .2);
-    transform: scale(1.3);
-    z-index: 2;
+.container-card {
+	max-width: 200rem;
+	margin: 3 auto;
+	padding: 0 4rem 2rem;
 }
-.text {
-    font-size: 3rem;
-    margin-top: -70px;
-    color: rgb(21, 49, 143);
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    text-decoration: none;
+
+.heading {
+	font-family: "Montserrat", Arial, sans-serif;
+	font-size: 2rem;
+	font-weight: 400;
+	line-height: 1.3;
+	text-align: center;
+	padding: 10rem 0;
+	color: #6d6d6d;
 }
-img {
-    display: block;
-    height: 300px;
+
+.heading span {
+	display: block;
 }
-.box img {
-    height: 500px;
-    display: block;
-    width: 100%;
+
+.gallery {
+	display: flex;
+	flex-wrap: wrap;
+	/* Compensate for excess margin on outer gallery flex items */
+	margin: -1rem -1rem;
 }
-.history .box {
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2), 0 4px 16px 0 rgba(0, 0, 0, .2);
-    text-align: center;
+
+.gallery-item {
+	/* Minimum width of 24rem and grow to fit available space */
+	flex: 1 0 24rem;
+	/* Margin value should be half of grid-gap value as margins on flex items don't collapse */
+	margin: 1rem;
+	box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
+	overflow: hidden;
 }
-.box {
-    width: 40%;
-    margin: 0 10px;
-    height: 500px;
-    transition: 3s;
-    cursor: pointer;
-    border: 3px solid;
-    overflow: hidden;
+
+.gallery-image {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transition: transform 400ms ease-out;
 }
-.history {
-    width: 90%;
-    padding: 10px;
-    margin: 100px auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    overflow: hidden; 
+
+.gallery-image:hover {
+	transform: scale(1.15);
 }
-.p3{
-    color: rgb(3, 3, 3);
-    padding-left: 550px;
-    padding-top: 10%;
+
+/*
+
+The following rule will only run if your browser supports CSS grid.
+
+Remove or comment-out the code block below to see how the browser will fall-back to flexbox styling. 
+
+*/
+
+@supports (display: grid) {
+	.gallery {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+		grid-gap: 2rem;
+	}
+
+	.gallery,
+	.gallery-item {
+		margin: 0;
+	}
 }
-.p4{
-    color: rgb(0, 0, 0);
-    padding-left: 550px;
-}
-iframe{
-    height: 400px;
-    width: 100%;
-}
-.Login{
-    font-size: 20px;
-    background-color: black;
-    color: beige;
-    border-radius: 5px;
-}
-.Login:hover{
-    font-size: 25px;
-    background-color: rgba(245, 245, 220, 0.664);
-    color: black;
-    border: 3px solid;
-    transition: 800ms;
-}
-.signup{
-    font-size: 20px;
-    background-color: black;
-    color: beige;
-    border-radius: 5px;
-}
-.signup:hover{
-    font-size: 25px;
-    background-color: rgba(245, 245, 220, 0.664);
-    color: black;
-    border: 3px solid;
-    transition: 800ms;
-}
+
+/* card css-end */

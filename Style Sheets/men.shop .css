@@ -1,179 +1,171 @@
-.card {
-  border-radius: 5px;
-  padding: 8px;
-  border: 5px solid rgb(0, 0, 0);
-  width: 300px;
-  margin-top: 10%;
-  display: inline-block;
-  background-color: rgb(90, 86, 86);
-  margin-left: 60px;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-  .card-img1 {
+.title{
+  color:white;
+}
+span{
+  color: white;
+}
+h1{
+  font-size: 2.5rem;
+  font-family: 'Montserrat';
+  font-weight: normal;
+  color: #ffffff;
+  text-align: center;
+  margin: 2rem 0;
+}
+/* For screens smaller than 768px (i.e. tablets and phones) */
+@media (max-width: 767px) {
+  .flip-card {
     width: 100%;
-    height: 300px;
-    background-image: url(../Images/men\ wear\ 1.jpeg);
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  .card-img2{
-    width: 100%;
-    height: 300px;
-    background-image: url(../Images/menwear2.jpeg);
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  .card-img3{
-    width: 100%;
-    height: 300px;
-    background-image: url(../Images/menwear6.jpeg);
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  .card-img4{
-    width: 100%;
-    height: 300px;
-    background-image: url(../Images/menwear5.jpeg);
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  .card-img5{
-    width: 100%;
-    height: 300px;
-    background-image: url(../Images/16_0fe7ac0e2f-bn007-men-yellow-6-full.webp);
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  .card-img6{
-    width: 100%;
-    height: 300px;
-    background-image: url(../Images/16_c3ddf7cc63-bn007-men-blue-3-full.webp);
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  .card-img7{
-    width: 100%;
-    height: 300px;
-    background-image: url(../Images/2680762091a1_1.webp);
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  .card-img8{
-    width: 100%;
-    height: 300px;
-    background-image: url(../Images/16_d489759e3c-bn007-men-red-5-full.webp);
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  .card-img9{
-    width: 100%;
-    height: 300px;
-    background-image: url(../Images/downparka1.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  .card-img10{
-    width: 100%;
-    height: 300px;
-    background-image: url(../Images/downparka2.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  .card-img11{
-    width: 100%;
-    height: 300px;
-    background-image: url(../Images/downparka3.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  .card-img12{
-    width: 100%;
-    height: 300px;
-    background-image: url(../Images/downparka4.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  .card-img13{
-    width: 100%;
-    height: 300px;
-    background-image: url(../Images/full\ siut\ 2.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  .card-img14{
-    width: 100%;
-    height: 300px;
-    background-image: url(../Images/full\ suit\ 3.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  .card-img15{
-    width: 100%;
-    height: 300px;
-    background-image: url(../Images/full\ suit\ 4.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  .card-img16{
-    width: 100%;
-    height: 300px;
-    background-image: url(../Images/full\ suit\ 1.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  .card h2 {
-    font-size: 20px;
-    margin: 10px 0;
-    color: aqua;
+    margin-bottom: 20px;
   }
   
-  .card p {
-    font-size: 16px;
-    color: #666;
-    margin: 10px 0;
-    color: aquamarine;
+  .flip-card-inner {
+    width: 100%;
+    height: 350px;
   }
   
-  .card button {
-    background-color: #4CAF50;
-    border: none;
-    color: white;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 10px 0;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-left: 80px;
+  .flip-card-front, .flip-card-back {
+    width: 100%;
+    height: 350px;
   }
   
-  .card button:hover {
-    color: #4CAF50;
-    background-color: transparent;
-    border: #4CAF50 3px solid;
+  .flip-card-back h4 {
+    font-size: 1.5rem;
+    margin-top: 20px;
+  }
+}
+
+/* For screens larger than 768px (i.e. desktops and laptops) */
+@media (min-width: 768px) {
+  .flip-card {
+    width: 31%;
+    margin-right: 3%;
+    margin-bottom: 20px;
   }
   
-  .cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    margin: 0 auto;
-    max-width: 1200px;
+  .flip-card:nth-child(3n+3) {
+    margin-right: 0;
   }
-  
-  @media (max-width: 768px) {
-    .cards {
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-    }
-    
-    .card {
-      margin-top: 5%;
-      margin-left: 0;
-      margin-right: 0;
-      text-align: center;
-    }
+}
+
+.wrapper{
+  width: 90%;
+  margin: 0 auto;
+  max-width: 80rem;
+}
+
+.cols{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.col{
+  width: calc(25% - 2rem);
+  margin: 1rem;
+  cursor: pointer;
+}
+
+.container{
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+
+.front,
+.back{
+  background-size: cover;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.25);
+  border-radius: 10px;
+  background-position: center;
+  transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+  backface-visibility: hidden;
+  text-align: center;
+  min-height: 280px;
+  height: auto;
+  border-radius: 10px;
+  font-size: 1.5rem;
+}
+
+.back{
+  background: #fbfdff;
+  background: linear-gradient(45deg, #cedce7 0%, #ffffff 100%);
+}
+
+.front:after{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  content: '';
+  display: block;
+  opacity: .6;
+  background-color: #000;
+  backface-visibility: hidden;
+  border-radius: 10px;
+}
+
+.container:hover .front,
+.container:hover .back{
+  transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+}
+
+.back{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.inner{
+  transform: translateY(-50%) translateZ(60px) scale(0.94);
+  top: 50%;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  padding: 2rem;
+  box-sizing: border-box;
+  outline: 1px solid transparent;
+  perspective: inherit;
+  z-index: 2;
+}
+
+.container .back{
+  transform: rotateY(180deg);
+  transform-style: preserve-3d;
+}
+
+.container .front{
+  transform: rotateY(0deg);
+  transform-style: preserve-3d;
+}
+
+.container:hover .back{
+  transform: rotateY(0deg);
+  transform-style: preserve-3d;
+}
+
+.container:hover .front{
+  transform: rotateY(-180deg);
+  transform-style: preserve-3d;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 768px) {
+  .col {
+    width: calc(33.33% - 2rem);
   }
+}
+
+@media only screen and (max-width: 480px) {
+  .col {
+    width: calc(50% - 2rem);
+  }
+}

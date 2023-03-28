@@ -1,3 +1,7 @@
+body{
+     max-width: 100%;
+     min-width: 100%;
+}
 .parallax1{
     background-image: url('../Images/istockphoto-96995397-612x612.jpg');
     background-repeat: no-repeat;
@@ -12,4 +16,20 @@
     padding-top: 200px;
     justify-content: center;
     text-align: center;
+}
+.container-parallax{
+    background-color: beige;
+    width: 80%;
+    margin-left: 150px;
+     
+}
+.parallax2{
+    background-image: url('../Images/best\ for\ bodyy.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-attachment:fixed;
+    height: 700px;
+    width: 50%;
+    padding-right: 100px;
 }

@@ -1,276 +1,159 @@
 *{
-<<<<<<< HEAD
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-=======
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-} 
-body{
-    background-color: rgb(78, 89, 102);
-    overflow-x: hidden;
-}
-.carousel-item{
-    height: 600px;
-    width: 100%;
-}
-.carousel-caption h5{
-    margin-bottom: 150px;
-    font-size: 40px;
-    color: rgb(0, 0, 0) !important;
-    @keyframes slide-in-down{
-    from{
-    transform: translate3d(0, -100%, 0);
-    visibility: visible;
-    }
-    to{
-    transform: translate3d(0, 0, 0);
-    }
-    }
-}
-:root{
-    --background-dark: #2d3548;
-    --text-light: rgba(255,255,255,0.6);
-    --text-lighter: rgba(255,255,255,0.9);
-    --spacing-s: 8px;
-    --spacing-m: 16px;
-    --spacing-l: 24px;
-    --spacing-xl: 32px;
-    --spacing-xxl: 64px;
-    --width-container: 1200px;
-  }
-  .hero-section{
-    align-items: flex-start;
-    background-image: linear-gradient(15deg, #0f4667 0%, #2a6973 150%);
-    display: flex;
-    min-height: 100%;
-    justify-content: center;
-    padding: var(--spacing-xxl) var(--spacing-l);
-  }
-  
-  .card-grid{
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-column-gap: var(--spacing-l);
-    grid-row-gap: var(--spacing-l);
-    max-width: var(--width-container);
-    width: 100%;
-  }
-  
-  @media(min-width: 540px){
-    .card-grid{
-      grid-template-columns: repeat(2, 1fr); 
-    }
-  }
-  
-  @media(min-width: 960px){
-    .card-grid{
-      grid-template-columns: repeat(4, 1fr); 
-    }
-  }
-  
-  .card{
-    list-style: none;
-    position: relative;
-  }
-  
-  .card:before{
-    content: '';
-    display: block;
-    padding-bottom: 150%;
-    width: 100%;
-  }
-  
-  .card__background{
-    background-size: cover;
-    background-position: center;
-    border-radius: var(--spacing-l);
-    bottom: 0;
-    filter: brightness(0.75) saturate(1.2) contrast(0.85);
-    left: 0;
-    position: absolute;
-    right: 0;
-    top: 0;
-    transform-origin: center;
-    transform: scale(1) translateZ(0);
-    transition: 
-      filter 200ms linear,
-      transform 200ms linear;
-  }
-  
-  .card:hover .card__background{
-    transform: scale(1.05) translateZ(0);
-  }
-  
-  .card-grid:hover > .card:not(:hover) .card__background{
-    filter: brightness(0.5) saturate(0) contrast(1.2) blur(20px);
-  }
-  
-  .card__content{
-    left: 0;
-    padding: var(--spacing-l);
-    position: absolute;
-    top: 0;
-  }
-  
-  .card__category{
-    color: var(--text-light);
-    font-size: 0.9rem;
-    margin-bottom: var(--spacing-s);
-    text-transform: uppercase;
-  }
-  
-  .card__heading{
-    color: var(--text-lighter);
-    font-size: 1.9rem;
-    text-shadow: 2px 2px 20px rgba(0,0,0,0.2);
-    line-height: 1.4;
-    word-spacing: 100vw;
-  }
-.carousel-caption p{
-    margin-bottom: 150px;
-    font-size: 30px;
-    color: rgb(0, 0, 0) !important;
-}
-.d-block{
-    height: 600px;
-}
-.feature{
-    background-image: url(../Images/pngegg.png);
-    width: 100%;
-    height: 600px;
-    margin-top: 100px;
-    background-size: cover;  
-    background-position: center;  
-    background-repeat: no-repeat;
->>>>>>> 09332f212b4078c54022ff740a1494b46fa0bc60
 }
 
-.container-bc{
-  height: 10%;
-  padding-top: 20px;
+/* carousel-css */
+section{
+  padding: 100px 200px;
 }
-.container-bc img{
-  height: 400px;
+.home{
+  top: 0;
+  left: 0;
+  background-size: cover;
+  position: relative;
   width: 100%;
+  min-height: 120vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background: #2696E9;
 }
-body {
-  font-family: sans-serif;
-  color: #FF4136;
-  text-align: center;
-  font-size: 16px;
-}
-
-  /* geo location */
-h1 {
-  font-size: 4em; /*fallback*/
-  font-size: 10vw;
-}
-.geo-location{
+.home:before{
+  z-index: 777;
+  content: "";
+  position: absolute;
+  background: rgba(0, 0, 0, 0.1);
   width: 100%;
-  height: 900px;
-  padding-top: 100px;
+  height: 100%;
+  top: 0;
+  left: 0;
 }
-/* geo location-end */
+.home .content{
+  z-index: 888;
+  color: #fff;
+  width: 70%;
+  margin-top: 50px;
+  display: none;
+}
+.home .content.active{
+  display: block;
+}
+.home .content h1{
+  font-size: 4em;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  line-height: 75px;
+  margin-bottom: 40px;
+}
+.home .content h1 span{
+  font-size: 1.2em;
+  font-weight: 400;
+}
+.home .content p{
+  margin-bottom: 65px;
+  font-size: 1.1em;
+}
+.home .content a{
+  background: #ffef09;
+  padding: 15px 35px;
+  color: #000000;
+  font-size: 1.1em;
+  font-weight: 900;
+  text-decoration: none;
+  border-radius: 30px;
+}
+.home .media-icons{
+  z-index: 888;
+  position: absolute;
+  right: 30px;
+  display: flex;
+  flex-direction: column;
+  transition: 0.5s ease;
+}
+.home .media-icons a{
+  color: #fff;
+  font-size: 1.6em;
+  transition: 0.3s ease;
+}
+.home .media-icons a:note(:last-child){
+  margin-bottom: 20px;
+}
+.home .media-icons a:hover{
+  transform: scale(1.3);
+}
+.home video{
+  z-index: 000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.home img{
+  z-index: 000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.slider-navigation{
+  z-index: 888;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(200px);
+  margin-bottom: 12px;
+}
+.slider-navigation .nav-btn{
+  width: 15px;
+  height: 15px;
+  background: #000000;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 0 2px rgba(255, 255, 255, 0.5);
+  transition: 0.3s ease;
+}
+.slider-navigation .nav-btn.active{
+  background: #a1a1a1;
 
-/* card css */
-/*
+}
+.slider-navigation .nav-btn:not(:last-child){
+  margin-right: 2px;
+}
+.slider-navigation .nav-btn:hover{
+  transform: scale(1.2);
 
-All grid code is placed in a 'supports' rule (feature query) at the bottom of the CSS (Line 77). 
-        
-The 'supports' rule will only run if your browser supports CSS grid.
-
-Flexbox is used as a fallback so that browsers which don't support grid will still recieve an identical layout.
-
-*/
-
-@import url(https://fonts.googleapis.com/css?family=Montserrat:500);
-
-:root {
-	/* Base font size */
-	font-size: 10px;
 }
 
-*,
-*::before,
-*::after {
-	box-sizing: border-box;
+.video-slide{
+  position: absolute;
+  width: 100%;
+  clip-path: circle(0% at 0 50%);
+}
+.video-slide.active{
+  clip-path: circle(150% at 0 50%);
+  transition: 2s ease;
+  transition-property: clip-path;
 }
 
-body {
-	min-height: 100vh;
-	background-color: #fafafa;
+@media (max-width: 1040px){
+  .section{
+    padding: 100px 20px;
+  }
+  .home .media-icons{
+    right: 15px;
+  }
 }
-
-.container-card {
-	max-width: 200rem;
-	margin: 3 auto;
-	padding: 0 4rem 2rem;
+@media (max-width: 600px){
+  .home .content a {
+    font-size: 0.8em;
 }
-
-.heading {
-	font-family: "Montserrat", Arial, sans-serif;
-	font-size: 2rem;
-	font-weight: 400;
-	line-height: 1.3;
-	text-align: center;
-	padding: 10rem 0;
-	color: #6d6d6d;
 }
-
-.heading span {
-	display: block;
-}
-
-.gallery {
-	display: flex;
-	flex-wrap: wrap;
-	/* Compensate for excess margin on outer gallery flex items */
-	margin: -1rem -1rem;
-}
-
-.gallery-item {
-	/* Minimum width of 24rem and grow to fit available space */
-	flex: 1 0 24rem;
-	/* Margin value should be half of grid-gap value as margins on flex items don't collapse */
-	margin: 1rem;
-	box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
-	overflow: hidden;
-}
-
-.gallery-image {
-	display: block;
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-	transition: transform 400ms ease-out;
-}
-
-.gallery-image:hover {
-	transform: scale(1.15);
-}
-
-/*
-
-The following rule will only run if your browser supports CSS grid.
-
-Remove or comment-out the code block below to see how the browser will fall-back to flexbox styling. 
-
-*/
-
-@supports (display: grid) {
-	.gallery {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
-		grid-gap: 2rem;
-	}
-
-	.gallery,
-	.gallery-item {
-		margin: 0;
-	}
-}
-
-/* card css-end */
+/* carousel-css-end */

@@ -1,15 +1,29 @@
-carousal();
+// Javascript for video slider
+const btns= document.querySelectorAll(".nav-btn");
+const slides= document.querySelectorAll(".video-slide");
+const contents= document.querySelectorAll(".content");
 
-function carousal() {
-            $("#banner-slider-demo-17").owlCarousel({
-                items: 1,
-                autoplay: true,
-                autoplayTimeout: 5000,
-                nav: false,
-                dots: true,
-                navRewind: true,
-                animateIn: 'fadeIn',
-                animateOut: 'fadeOut',
-                loop: true
-            });
+var sliderNav = function(manual){
+    btns.forEach((btn) => {
+        btn.classList.remove("active");
+    });
+
+    slides.forEach((slide) => {
+        slide.classList.remove("active");
+    });
+
+    contents.forEach((content) => {
+        content.classList.remove("active");
+    });
+
+    btns[manual].classList.add("active");
+    slides[manual].classList.add("active");
+    contents[manual].classList.add("active");
 }
+
+    btns.forEach((btn, i) =>{
+        btn.addEventListener("click", () => {
+           sliderNav(i);
+        });
+    });
+// Javascript for video slider-end

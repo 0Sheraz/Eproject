@@ -390,7 +390,7 @@ section{
 @import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
 
 .owl-slider{
-  padding-top: 40px;
+ 
 }
 
 .animated-text {
@@ -427,7 +427,7 @@ section{
 
 /* body-text-css */
 .right{
-  padding: 80px 150px;
+  
 }
 .right .content .wel-t{
   font-size: 1.1em;
@@ -446,7 +446,7 @@ section{
 /* card-css */
 * {
   /* Typography */
-  --main-font: 'Slabo 27px', serif;
+  
   
   /* Calculation */
   --responsive: calc((var(--min-font) * 1px) + (var(--max-font) - var(--min-font)) * ((100vw - 420px) / (1200 - 420))); /* Ranges from 421px to 1199px */
@@ -500,7 +500,7 @@ p {
 }
 
 .owl-slider{
-  background-color: #f7f7f7;
+  background-color: #000000;
 }
 .owl-nav button {
   position: absolute;

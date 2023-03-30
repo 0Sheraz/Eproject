@@ -1,20 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- css link -->
-  <link rel="stylesheet" href="/Style Sheets/nav.css">
-  <link rel="stylesheet" href="/Style Sheets/Style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
-  <!-- css-link end -->
-  <title>Document</title>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css link -->
+    <link rel="stylesheet" href="/Style Sheets/nav.css">
+    <link rel="stylesheet" href="/Style Sheets/body.css">
+    <link rel href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <!-- font-family cdn -->
+    <link href="https://fonts.cdnfonts.com/css/amuse-bouche" rel="stylesheet">
+    <!-- font-family cdn-end -->
+    <!-- css-link end -->
+    <title>Document</title>
+  <!-- html -->
+
+  <!-- html-end -->
   <!-- bootrstrap css-link -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <!-- bootstrap css-link-end -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!--  -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <!--  -->
+  <script src="http://abvichico.com/js/simple-inheritance.min.js"></script>
+  <script src="http://abvichico.com/js/code-photoswipe-1.0.11.min.js"></script>
+  <!--  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -32,105 +48,318 @@
 
 
   <!-- navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container">
-      <a class="navbar-brand" href="#">Navbar</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Dropdown
+        <!-- Bootstrap CDN -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">   
+                <!-- bootstrap -->
+        <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<!-- Font awesome-->
+
+<nav class="navbar navbar-expand-md navbar-light bg-light" id="navbar">  
+  <div class="container nav-container">
+    <div class="d-flex flex-column align-items-start w-100">
+      <div class="d-flex justify-content-between w-100" id="nav-firstline">
+        <div class=" nav-brand bd-highlight">
+          <a href="{{ url('/') }}" class="nav-brand">
+            <img src="/Images/LOGO2.png" alt="Vaimo store" />
+          </a>
+        </div>
+        <div>                        
+          <div class="nav-btn">
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
+              <i class="fa fa-bars nav-fa-icons"></i>
+            </button>            
+          </div>
+          <div class=" bd-highlight nav-btn">
+            <a id="shopping-cart" href="#">
+
+              <i class="fa fa-shopping-cart nav-fa-icons"></i> &nbsp;
+              <span id="cart-info">Alps ascents</span>
+
             </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            <div class="shopping-cart-info" id="shopping-cart-info">
+              
+            </div>                   
+          </div>
+        </div>
+      </div>     
+
+
+      <div class="collapse navbar-collapse  ml-2 top-bar" id="main-navbar">
+        <a class="navbar-brand" href="/index.html"></a>
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/index.html">Home </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/about us.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/contactus.html">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/history.html">History</a>
+          </li>
+          <!-- drop down -->
+          <li class="nav-item collections">
+            <a class="nav-link collections" href="#">Categaries</a>
+            <ul class="dropdown-menu dropdown-firstmenu">
+              <li class="dropdown-submenu">
+                <a tabindex="-1" href="#"> Climbing <span class="dropdown-caret"><i class="fa fa-caret-right"></i></span></a>
+              </li>
+              <li class="dropdown-submenu">
+                <a tabindex="-1" href="#">Treking <span class="dropdown-caret"><i class="fa fa-caret-right"></i></span></a>
+              </li>
+              <li class="dropdown-submenu">
+                <a tabindex="-1" href="#">Sky-touring <span class="dropdown-caret"><i class="fa fa-caret-right"></i></span></a>
+              </li>             
+            </ul>
+          </li>
+          <!-- 2 -->
+          <li class="nav-item collections">
+            <a class="nav-link collections" href="#">Shop</a>
+            <ul class="dropdown-menu dropdown-firstmenu">
+              <li class="dropdown-submenu">
+                <a tabindex="-1" href="/shop.men.html"> Men <span class="dropdown-caret"><i class="fa fa-caret-right"></i></span></a>
+              </li>
+              <li class="dropdown-submenu">
+                <a tabindex="-1" href="/shop.men.html">Women <span class="dropdown-caret"><i class="fa fa-caret-right"></i></span></a>
+              </li>
+              <li class="dropdown-submenu">
+                <a tabindex="-1" href="/shop.men.html">Equipments <span class="dropdown-caret"><i class="fa fa-caret-right"></i></span></a>
+              </li>             
+            </ul>
+          </li>
+          <!-- end drop down -->
+          
+        </ul>
+        <ul class="navbar-nav ">
+          <li class="nav-item collections">
+            <a class="nav-link collections" href="#">My acount</a>
+            <ul class="dropdown-menu dropdown-firstmenu">
+              <li class="dropdown-submenu">
+                <a tabindex="-1" href="/login.html"> Sign up <span class="dropdown-caret"><i class="fa fa-caret-right"></i></span></a>
+              </li>
+              <li class="dropdown-submenu">
+                <a tabindex="-1" href="/login.html">Sign in <span class="dropdown-caret"><i class="fa fa-caret-right"></i></span></a>
+              </li>             
             </ul>
           </li>
         </ul>
-        <form class="d-flex">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
       </div>
-    </div>
-  </nav>
+    </div> <!-- end div.d-flex -->
+  </div> <!-- end div.container -->
+</nav>
   <!-- navbar-end -->
 
   <!-- carousel -->
- <section class="home">
-   <img class="video-slide" src="/Images/mounteverest.jpg">
-   <video class="video-slide active" src="/Images/794c43549e3806cede47cfbbef08dd1f.mp4" autoplay muted loop></video>
-   <img class="video-slide" src="/Images/K2-main-slider.jpg">
-  <img class="video-slide" src="/Images/Carstensz-main-slider.jpg">
-  <img class="video-slide" src="/Images/Vinson2-main-slider.jpg">
-   <div class="content active">
-    <h1>Mount<br><span>Everest</span></h1>
-    <p>Climb with us to the Top of The World</p>
-    <a href="#">Read More</a>
-   </div>
-   <div class="content">
-    <h1>Mount<br><span>Everest</span></h1>
-    <p>Climb with us to the Top of The World</p>
-    <a href="#">Read More</a>
-   </div>
-   <div class="content">
-    <h1>k2<br><span>ASIA</span></h1>
-    <p>The savage Mountain</p>
-    <a href="#">Read More</a>
-   </div>
-   <div class="content">
-    <h1>Carstensz<br><span>Pyramid</span></h1>
-    <p>The Least Climbed of the Seven Summits</p>
-    <a href="#">Read More</a>
-   </div>
-   <div class="content">
-    <h1>Mount <br><span>Vinson</span></h1>
-    <p>Climb Antarctica’s highest peak</p>
-    <a href="#">Read More</a>
-   </div>
-   <div class="media-icons">
-    <a href="#"><i class="fab fa-facebook-f"></i></a>
-    <a href="#"><i class="fab fa-instagram"></i></a>
-    <a href="#"><i class="fab fa-twitter"></i></a>
-   </div>
-  <div class="slider-navigation">
-   <div class="nav-btn active"></div>
-   <div class="nav-btn"></div>
-   <div class="nav-btn"></div>
-   <div class="nav-btn"></div>
-   <div class="nav-btn"></div>
-  </div>
- </section>
+  <section class="home">
+    <img class="video-slide" src="/Images/mounteverest.jpg">
+    <video class="video-slide active" src="/Images/794c43549e3806cede47cfbbef08dd1f.mp4" autoplay muted loop></video>
+    <img class="video-slide" src="/Images/K2-main-slider.jpg">
+    <img class="video-slide" src="/Images/Carstensz-main-slider.jpg">
+    <img class="video-slide" src="/Images/Vinson2-main-slider.jpg">
+    <div class="content active">
+      <h1>Mount<br><span>Everest</span></h1>
+      <p class="carousel-p">Climb with us to the Top of The World</p>
+      <a href="#">Read More</a>
+    </div>
+    <div class="content">
+      <h1>Mount<br><span>Everest</span></h1>
+      <p class="carousel-p">Climb with us to the Top of The World</p>
+      <a href="#">Read More</a>
+    </div>
+    <div class="content">
+      <h1>k2<br><span>ASIA</span></h1>
+      <p class="carousel-p">The savage Mountain</p>
+      <a href="#">Read More</a>
+    </div>
+    <div class="content">
+      <h1>Carstensz<br><span>Pyramid</span></h1>
+      <p class="carousel-p">The Least Climbed of the Seven Summits</p>
+      <a href="#">Read More</a>
+    </div>
+    <div class="content">
+      <h1>Mount <br><span>Vinson</span></h1>
+      <p class="carousel-p">Climb Antarctica’s highest peak</p>
+      <a href="#">Read More</a>
+    </div>
+    <div class="media-icons">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+    </div>
+    <div class="slider-navigation">
+      <div class="nav-btn active"></div>
+      <div class="nav-btn"></div>
+      <div class="nav-btn"></div>
+      <div class="nav-btn"></div>
+      <div class="nav-btn"></div>
+    </div>
+  </section>
   <!-- carousel-end -->
 
- 
 
-    <div class="geo-location">
-      <h1>Map</h1>
-      
+
+
+
+  <!-- card -->
+  <div class="right">
+    <p class="animated-text">Welcome to alpine ascents.</p>
+    <div class="content">
+      <p class="wel-t">
+        Celebrating 37 years of leading successful expeditions in 2023, Alpine Ascents International, Inc. is a leader
+        in the climbing industry and has been instrumental in setting guiding standards in the international climbing
+        community for most of our history. This year, we will offer more than 30 different expeditions and 50 training
+        courses in 14 countries, including the Arctic and Antarctic regions. These expeditions range from three-day
+        climbs of Mount Rainier to training courses in the North Cascades and Alaska, andascents of the highest
+        mountains around the world. Alpine Ascents’ philosophy is based on a true love and
+        understanding of mountain wilderness. Our mission and goals are simple: by using the best climbing talent in
+        the country, we offer the opportunity for climbers at all levels to achieve their personal aspirations through
+        quality, challenging, safe and fun expeditions. Unparalleled mountain adventures are what we do.
+      </p>
     </div>
+  </div>
+  <!-- card-end -->
+
+  <!-- Map -->
+  <div class="geo-location">
+    <h1 class="responsive-text">Map</h1>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16858886.629529595!2d0!3d-75.05434995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa4b9967b3390754b%3A0x6e52be1f740f2075!2sAntarctica!5e0!3m2!1sen!2s!4v1680133623515!5m2!1sen!2s"
+      width="100%" height="700" style="border:0;" allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+  <!-- Map-end -->
 
 
-    <!-- card -->
-    
-    <!-- card-end -->
+  <!-- card -->
+
+  <div class="owl-slider">
+    <h1 class="responsive-text">world classic treks</h1>
+
+    <p> wild places in our backyard or in far flung places</p>
+    <div id="carousel" class="owl-carousel">
+      <div class="item">
+        <img src="/Images/asia treks.avif" alt="1000X1000">
+      </div>
+      <div class="item">
+        <img src="/Images/k2 base camp.avif" alt="">
+      </div>
+      <div class="item">
+        <img src="/Images/north america.avif" alt="">
+      </div>
+      <div class="item">
+        <img src="/Images/africa climb.avif" alt="">
+      </div>
+      <div class="item">
+        <img src="/Images/seven summits.avif" alt="">
+      </div>
+      <div class="item">
+        <img src="/Images/europe.avif" alt="">
+      </div>
+    </div>
+  </div>
+  <!-- card end -->
+
+  <!-- 2nd card -->
+  <div class="t-card">
+  <div class="t-card-img"><img src="/Images/Asia.jpg" alt=""></div>
+  <div class="t-card-img"><img src="/Images/Asia.jpg" alt=""></div>
+  <div class="t-card-img"><img src="/Images/Asia.jpg" alt=""></div>
+  <div class="t-card-img"><img src="/Images/Asia.jpg" alt=""></div>
+  
+  </div>
+  <!-- 2nd card-end -->
+
+  <!-- footer -->
+  <footer class="bg-dark text-white pt-5 pb-4">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">"
+    <link rel="stylesheet" type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" 
+      class="container text-center text-md-left">
+    <div class="row text-center text-md-left">
+      <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+        <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Alpine Ascent</h5>
+        <p>A mountain can be defined as a landform that is higher and steeper than a hill as per the dictionary. It
+          stands high above the sea level, which is our surroundings. A mountain commonly has a steep slope and a
+          sharp peak unlike hills that have gradual incline and more rounded peaks.</p>
+      </div>
+      <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+        <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Programs</h5>
+        <p>
+          <a href="#" class="text-white" style="text-decoration: none;">Hiking</a>
+        </p>
+        <p>
+          <a href="#" class="text-white" style="text-decoration: none;">Adventures Location</a>
+        </p>
+        <p>
+          <a href="#" class="text-white" style="text-decoration: none;">Mountain Ascent</a>
+        </p>
+        <p>
+          <a href="#" class="text-white" style="text-decoration: none;">Ski Touring</a>
+        </p>
+      </div>
+      <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+        <h5 class="text-uppercase mb-4 font-weight-bold text-warning"> Useful links</h5>
+        <p>
+          <a href="#" class="text-white" style="text-decoration: none;">The providers</a>
+        </p>
+        <p>
+          <a href="#" class="text-white" style="text-decoration: none;">The providers</a>
+        </p>
+        <p>
+          <a href="#" class="text-white" style="text-decoration: none;">The providers</a>
+        </p>
+        <p>
+          <a href="#" class="text-white" style="text-decoration: none;">The providers</a>
+        </p>
+      </div>
+      <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+        <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Contact</h5>
+        <p>
+          <i class="fas-fa-home mr-3"></i>New-York,NY-2345,-US
+        </p>
+        <p>
+          <i class="fas-fa-envelope mr-3"></i>aptectgdn.net
+        </p>
+        <p>
+          <i class="fas-fa-phone mr-3"></i>+92 3152629500
+        </p>
+        <p>
+          <i class="fas-fa-print mr-3"></i>+01 435 654 44
+        </p>
+
+      </div>
+    </div>
+    <hr class="mb-4">
+    <div class="row align-items-center">
+      <div class="col-md-7 col-lg-8">
+        <p>Copyright @2023 All rights reserved by:
+          <a href="#" style="text-decoration: none;">
+            <strong class="text-warning"> The providers</strong>
+          </a>
+        </p>  
+<!-- footer ends here  -->
+<script>
+  $(window).on('scroll', function() {
+    if ($(window).scrollTop() > 50) {
+      $('.navbar').addClass('sticky');
+    } else {
+      $('.navbar').removeClass('sticky');
+    }
+  });
+  </script>
 
 
 
-    <!-- javascript-link -->
-    <script src="/js/Scripts/index.js"></script>
-    <!-- javascript-link-end -->
+  <!-- javascript-link -->
+  <script src="/js/Scripts/index.js"></script>
+  <!-- javascript-link-end -->
+
 </body>
 
 </html>

@@ -57,52 +57,18 @@ const text = document.querySelector(".sec-text");
 // text-animated javascript-end
 
 // body-card javascript
+const galleryItems = document.querySelectorAll('.gallery-item');
 
-
-    
-jQuery("#carousel").owlCarousel({
-    autoplay: true,
-    rewind: true, /* use rewind if you don't want loop */
-    margin: 20,
-     /*
-    animateOut: 'fadeOut',
-    animateIn: 'fadeIn',
-    */
-    responsiveClass: true,
-    autoHeight: true,
-    autoplayTimeout: 7000,
-    smartSpeed: 800,
-    nav: true,
-    responsive: {
-      0: {
-        items: 1
-      },
+galleryItems.forEach(item => {
+  const img = item.querySelector('img');
+  const caption = item.querySelector('.caption');
   
-      600: {
-        items: 3
-      },
-  
-      1024: {
-        items: 4
-      },
-  
-      1366: {
-        items: 4
-      }
-    }
+  img.addEventListener('mouseover', () => {
+    caption.style.opacity = '1';
   });
-
-//   body-card javascript end
-
-// 
-const sign_in_btn = document.querySelector("#sign-in-btn");
-const sign_up_btn = document.querySelector("#sign-up-btn");
-const container = document.querySelector(".container");
-
-sign_up_btn.addEventListener("click", () => {
-  container.classList.add("sign-up-mode");
+  
+  img.addEventListener('mouseout', () => {
+    caption.style.opacity = '0';
+  });
 });
 
-sign_in_btn.addEventListener("click", () => {
-  container.classList.remove("sign-up-mode");
-});

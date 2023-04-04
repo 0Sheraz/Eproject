@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/pages/pages.css">
+    <link rel="stylesheet" href="/Style Sheets/body.css">
+    <link rel="stylesheet" href="/Style Sheets/nav.css">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">"
+    <!-- link -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/jquery.slick/1.5.0/slick.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/jquery.slick/1.5.0/slick-theme.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- bootstrap  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+    <!-- link java -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="//cdn.jsdelivr.net/jquery.slick/1.5.0/slick.min.js"></script>
+
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-md navbar-light bg-light" id="navbar">
+        <div class="container nav-container">
+            <div class="d-flex flex-column align-items-start w-100">
+                <div class="d-flex justify-content-between w-100" id="nav-firstline">
+                    <div class=" nav-brand bd-highlight">
+                        <a href="{{ url('/') }}" class="nav-brand">
+                            <img src="/Images/LOGO2.png" alt="Vaimo store" />
+                        </a>
+                    </div>
+                    <div>
+                        <div class="nav-btn">
+                            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                                data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false"
+                                aria-label="Toggle navigation">
+                                <i class="fa fa-bars nav-fa-icons"></i>
+                            </button>
+                        </div>
+                        <div class=" bd-highlight nav-btn">
+                            <a id="shopping-cart" href="#">
+
+                                <i class="fa fa-shopping-cart nav-fa-icons"></i> &nbsp;
+                                <span id="cart-info">Alps ascents</span>
+
+                            </a>
+                            <div class="shopping-cart-info" id="shopping-cart-info">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="collapse navbar-collapse  ml-2 top-bar" id="main-navbar">
+                    <a class="navbar-brand" href="/index.html"></a>
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/index.html">Home </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/about us.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/contactus.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/history.html">History</a>
+                        </li>
+                        <!-- drop down -->
+                        <li class="nav-item collections">
+                            <a class="nav-link collections" href="#">Categaries</a>
+                            <ul class="dropdown-menu dropdown-firstmenu">
+                                <li class="dropdown-submenu">
+                                    <a tabindex="-1" href="Ice-Climbing.html"> Climbing <span class="dropdown-caret"><i
+                                                class="fa fa-caret-right"></i></span></a>
+                                </li>
+                                <li class="dropdown-submenu">
+                                    <a tabindex="-1" href="treking.html"> Hiking <span class="dropdown-caret"><i
+                                                class="fa fa-caret-right"></i></span></a>
+                                </li>
+                                <li class="dropdown-submenu">
+                                    <a tabindex="-1" href="#">Sky-touring <span class="dropdown-caret"><i
+                                                class="fa fa-caret-right"></i></span></a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- 2 -->
+                        <li class="nav-item collections">
+                            <a class="nav-link collections" href="#">Shop</a>
+                            <ul class="dropdown-menu dropdown-firstmenu">
+                                <li class="dropdown-submenu">
+                                    <a tabindex="-1" href="/shop.men.html"> Men <span class="dropdown-caret"><i
+                                                class="fa fa-caret-right"></i></span></a>
+                                </li>
+                                <li class="dropdown-submenu">
+                                    <a tabindex="-1" href="/shop.women.html">Women <span class="dropdown-caret"><i
+                                                class="fa fa-caret-right"></i></span></a>
+                                </li>
+                                <li class="dropdown-submenu">
+                                    <a tabindex="-1" href="/shop.men.html">Equipments <span class="dropdown-caret"><i
+                                                class="fa fa-caret-right"></i></span></a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- end drop down -->
+
+                    </ul>
+                    <ul class="navbar-nav ">
+                        <li class="nav-item collections">
+                            <a class="nav-link collections" href="#">My acount</a>
+                            <ul class="dropdown-menu dropdown-firstmenu">
+                                <li class="dropdown-submenu">
+                                    <a tabindex="-1" href="/login.html"> Sign up <span class="dropdown-caret"><i
+                                                class="fa fa-caret-right"></i></span></a>
+                                </li>
+                                <li class="dropdown-submenu">
+                                    <a tabindex="-1" href="/login.html">Sign in <span class="dropdown-caret"><i
+                                                class="fa fa-caret-right"></i></span></a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div> <!-- end div.d-flex -->
+        </div> <!-- end div.container -->
+    </nav>
+    <!-- navbar-end -->
+
+    <!-- carousel -->
+    <div class="carousel-3">
+        <div class="item-3">
+            <div class="imageContainer-3">
+                <img src="http://127.0.0.1:5501/Images/Carstensz-Pyramid-product04.jpg" />
+            </div>
+            <div class="overlay-3">
+                <h3>Carstensz pyramid</h3>
+                <p>-Ocean 4,884m/16,024ft.</p>
+            </div>
+        </div>
+        <div class="item-3">
+            <div class="imageContainer-3">
+                <img
+                    src="https://madisonmountaineering.com/wp-content/uploads/2019/10/Carstensz-Pyramid-product05.jpg" />
+            </div>
+
+            <div class="overlay-3">
+                <h3>Carstensz pyramid</h3>
+                <p>-Ocean 4,884m/16,024ft.</p>
+            </div>
+        </div>
+        <div class="item-3">
+            <div class="imageContainer-3">
+                <img
+                    src="https://madisonmountaineering.com/wp-content/uploads/2019/10/Carstensz-Pyramid-product01.jpg" />
+            </div>
+            <div class="overlay-3">
+                <h3>Carstensz pyramid</h3>
+                <p>-Ocean 4,884m/16,024ft.</p>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- paragraph -->
+    <!-- http://www.gutenberg.org/files/3177/3177-h/3177-h.htm -->
+    <div class="head-text-cars">
+    <div class="main-text-cars">
+        <div class="text-cars">
+            <p><span>Carstensz Pyramid,</span> one of the least climbed of the “7 Summits” is a formidable objective
+                located in Papua,
+                Indonesia. Our expedition begins in the beautiful island of Bali, where we fly to Timika then onward to
+                the
+                Yellow Valley base camp. Our high-end logistics, local staff, and mountain guides ensure you are well
+                taken
+                care of throughout the expedition. The mountain is limestone that rises from the thick forest below,
+                jutting
+                to just over 16,000′. This rock climb requires basic rock climbing ability to mostly 5th class terrain
+                on
+                fixed ropes.</p>
+            <p>Note From Garrett: I am very excited to lead our trips to Carstensz Pyramid! This expedition will be a
+                “fly
+                in and fly out” as current circumstances in Western Papua necessitate air transport. Our recent
+                expedition
+                to Carstensz Pyramid utilized air transport and was very successful: click to read the expedition
+                dispatches. I look forward to again repeating this high success and safety with you on our next
+                adventure!
+            </p>
+            <p>Helicopters: Using helicopters to fly in and out allows us the best chance for an overall successful
+                expedition, reaching the summit and returning safely. Recent logistical difficulties have resulted in
+                some
+                climbers not reaching the mountain, as well as detainment by tribesmen and the security company
+                overseeing
+                the mining operation adjacent to the mountain. Until the last few years, trekking was the normal way to
+                access the peak, with heavy reliance on local Dani Tribesman. Helicopter transport, in general, reduces
+                the
+                number of variables in reaching our destination. Utilizing the helicopter also reduces the chance of
+                contracting an illness while trekking, avoids the local politics, and offers easy and reliable
+                evacuation.
+            </p>
+        </div>
+        <div class="text-cars">
+            <p><span>PHYSICAL CONDITIONING,</span>
+                In the best interest of personal safety, success, and team compatibility, adequate training and
+                excellent physical condition are required. Prior experience carrying a heavy pack for multiple days
+                serves as excellent preparation for this climb. Climbers must be able to carry an average of 30 lbs. or
+                more and be physically and mentally prepared to deal with strenuous situations at high altitudes.
+                Climbers need to be in excellent physical condition for both personal enjoyment and to be an integral
+                team member. We encourage you to contact us so that we may assist you in developing a training program
+                that meets your particular needs.</p>
+        </div>
+    </div>
+    </div>
+    <!-- paragraph-end -->
+
+    <!-- carousel-end -->
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15918.723017879633!2d137.17975140153126!3d-4.085262000333557!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6822c32da4587561%3A0x966db8275bd1b648!2sPuncak%20Jaya!5e0!3m2!1sen!2s!4v1680600808758!5m2!1sen!2s" width="100%" height="650" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    <script src="/pages/pages.js"></script>
+</body>
+
+</html>

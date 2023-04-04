@@ -1,7 +1,8 @@
 @import url('https://fonts.cdnfonts.com/css/amuse-bouche');
 @import url('http://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,500');
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@700&display=swap');
+
 
 * {
   margin: 0;
@@ -12,7 +13,6 @@
 
 body {
   background-color: #F0F1F5;
-  font-family: 'Roboto', sans-serif;
   width: 100%;
 }
 
@@ -254,6 +254,28 @@ li.nav-item.collections .dropdown-menu .dropdown-submenu .dropdown-secondmenu {
 
 /* navbar-css end */
 
+/* go to top */
+
+/***********************************************************************************************/
+/* Button */
+/***********************************************************************************************/
+.go-top {
+	position: fixed;
+	bottom: 2em;
+	right: 2em;
+	text-decoration: none;
+	color: white;
+	background-color: rgba(0, 0, 0, 0.3);
+	font-size: 12px;
+	padding: 1em;
+	display: none;
+}
+
+.go-top:hover {
+	background-color: rgba(0, 0, 0, 0.6);
+}
+/* go to top */
+
 /* carousel-css */
 section {
   padding: 100px 200px;
@@ -465,7 +487,7 @@ section {
 /* carousel-css-end */
 
 .geo-location {
-  padding-top: 50px;
+  margin-top: 50px;
   background-color: #F0F1F5
 }
 
@@ -542,12 +564,14 @@ section {
 
 .centered-1 h1 {
   text-align: center;
-  margin-top: 10%;
+  margin-top: 5%;
+  font-weight: 200;
  
 }
 
 .gallery-section-1{
   width: 100%;
+  margin-top: -70px;
 }
 .gallery-section-1 .gallery-wrap-1{
   padding-top: 10px;
@@ -570,7 +594,7 @@ section {
 }
 .gallery-section-1 .gallery-wrap-1 .gallery-images-1 .gallery-1 .image-section-1 img{
   filter: brightness(0.5);
-  width: 100%;
+  width: 120%;
   height: 300px;
   border: 5px;
   display: block;
@@ -593,18 +617,18 @@ section {
   text-align: center;
   flex-direction: column;
   color: #fff;
-  font-family: 'Source Sans Pro', sans-serif;
+
   letter-spacing: 0.5px;
 }
-.gallery-section-1 .gallery-wrap-1 .gallery-images-1 .gallery-1 .caption-1 h3{
+.gallery-section-1 .gallery-wrap-1 .gallery-images-1 .gallery-1 .caption-1 h2{
   letter-spacing: 0.5px;
-  font-size: 1.7rem;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 .gallery-section-1 .gallery-wrap-1 .gallery-images-1 .gallery-1 .caption-1 p{
-  font-family: 'Source Sans Pro', sans-serif;
   letter-spacing: 0.6px;
   font-size: 1.1em;
   margin-top: 20px;
+  font-weight: 200;
 }
 @media screen and (max-width: 992px) {
   .gallery-section-1 .gallery-wrap-1 .gallery-images-1{
@@ -627,67 +651,102 @@ section {
 
 /* card-end */
 
-/*2nd card-css */
-div.resimler{
-  left: 0px;
-  top: 100px;
-  margin-right: auto;
-  margin-left: auto;
-  padding-right: 20px;
-  padding-left: 20px;
-  width: 1180px;
-  max-width: 100%;
+/* about */
+.work-a{
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  width:90vw;
+  margin:auto;
+  gap:1rem;
+  margin-top: 10%;
 }
-  div.resimler img:hover{
-    opacity: 0.5;
-    filter: alpha(opacity 0.6);
-    transition:opacity 0.3s linear 0s;
- }
+.text-a{
+ 
+  flex-basis:50%;
+  }
 
-div.resimler > .row > div {
-    padding: 0px!important;
-    position:relative;
-    font-size: 0;
-    margin-bottom: 30px;
-  }
-  div.resimler > .row > div > a {
-    display: inline-block;
-    position: relative;
-    max-height: 440px;
-    overflow: hidden;
-    background: linear-gradient(to bottom,rgba(0,0,0,0.7) 0%,rgba(0,0,0,0.6) 50%,transparent 100%);
-    background: -webkit-gradient(linear,left top,left bottom,from(rgba(0,0,0,0.7)),color-stop(50%,rgba(0,0,0,0.6)),to(transparent));
-   }
-div.resimler > .row {
-      margin-left: -15px;
-      margin-right: -15px;
-      clear: both;
-  }
-div.img-responsive {
-  margin-top: -21px;
+.text-a{
+  
+  flex-basis:60%;
 }
-.yazı{
+
+.text-a img{
+  height: 300px;
+  width:80%;
+  object-fit:cover;
+  border-radius:300px;
+  transition: 1s;
+}
+.text-a:hover img{
+  transform: scale(1.1);
+}
+.textb h1{
+  font-weight: 200;
+  
+}
+.textb p{
+  word-spacing: 2%;
+}
+.textb p span{
+  color: rgb(216, 184, 0);
+  font-weight: bold;
+}
+@media (max-width:600px){
+  .work-a{
+    flex-direction:column;
+  }
+  .text-a{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+  }
+}
+
+/* about-end  */
+
+/*2nd card-css */
+.gallery-section-1 .gallery-wrap-1 .gallery-images-1 .gallery-1 .image-section-2{
+  width: 100%;
+  overflow: hidden;
+}
+.gallery-section-1 .gallery-wrap-1 .gallery-images-1 .gallery-1 .image-section-2 img{
+  filter: brightness(0.5);
+  width: 140%;
+  height: 300px;
+  border: 5px;
+  display: block;
+  transition: 0.7s;
+}
+.gallery-section-1 .gallery-wrap-1 .gallery-images-1 .gallery-1 .image-section-2:hover img{
+  transform: scale(1.1);
+  filter: brightness(0.3);
+}
+.gallery-section-1 .gallery-wrap-1 .gallery-images-1 .gallery-1 .caption-2{
+  width: 100%;
+  height: 50%;
   position: absolute;
-  top: 0;
-  left: 0;
-  color: #eee;
-  font-weight: 700;
-  text-transform: capitalize;
-  margin: 20px;
-  font-size: 22px;
+  top: 10%;
+  left: 0%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  color: #fff;
+  font-family: 'Source Sans Pro', sans-serif;
+  letter-spacing: 0.5px;
 }
-.search-medium__more{
-    position: absolute;
-    z-index: 1;
-    bottom: 20px;
-    right: 20px;
-    font-size: 26px;
-    font-weight: 700;
-    color: #fff;
-    text-shadow: 0 0 3px rgba(0,0,0,.6);
-    line-height: .3;
-    transition: all .3s;
+.gallery-section-1 .gallery-wrap-1 .gallery-images-1 .gallery-1 .caption-2 h2{
+  letter-spacing: 0.5px;
+  font-size: 1.7rem;
+  font-weight: 500;
+  font-family: 'Source Sans Pro', sans-serif;
 }
+
+
 
 /* 2nd card-css-end */
 
@@ -1468,6 +1527,23 @@ div.codefen a:hover {
 .swiper-container-cube {
   overflow: visible
 }
+/* large card-css */
+.centered-2 h1 {
+  text-align: center;
+  margin-top: 10%;
+  font-weight: 200;
+ 
+}
+@media screen and (max-width: 992px) {
+  .centered-2 h1{
+      margin-top: 15%;
+  }
+}
+@media screen and (max-width: 568px) {
+  .centered-2 h1{
+      margin-top: 24%;
+  }
+}
 
 .blog-slider {
   width: 95%;
@@ -1479,8 +1555,8 @@ div.codefen a:hover {
   padding: 25px;
   border-radius: 25px;
   height: 400px;
+  margin-top: 10px;
   transition: all .3s;
-  margin-top: 50px
 }
 
 @media screen and (max-width:992px) {
@@ -1893,9 +1969,9 @@ div.codefen a:hover {
   }
 
   .sec-eight-text-area h1 {
-    padding: 2vh 0 3vh 0;
+    padding: 1vh 0 3vh 0;
     color: #434C57;
-    line-height: 1.3;
+    line-height: 1.1;
     font-size: 40px;
     font-family: amaticSC;
     letter-spacing: 2px;
